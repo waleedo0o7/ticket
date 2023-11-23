@@ -11,7 +11,7 @@
                 <h2 class="title bold">  تم إرسال رمز التحقق إلى البريد الإلكتروني  </h2>
             </div>
 
-            <div class="form-wrapper login">
+            <div class="form-wrapper ">
 
                 <form>
 

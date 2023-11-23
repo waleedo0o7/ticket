@@ -11,7 +11,7 @@
                 <h2 class="title bold"> ادخال كلمة المرور الجديدة </h2>
             </div>
 
-            <div class="form-wrapper login">
+            <div class="form-wrapper ">
 
                 <form>
 

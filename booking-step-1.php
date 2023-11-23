@@ -8,7 +8,7 @@
 
 
             <div class="title-wrapper mb-4">
-                <h2 class="title bold">  نسيان كلمة المرور  </h2>
+                <h2 class="title bold">  حجز تذاكر     </h2>
             </div>
 
             <div class="form-wrapper ">
@@ -18,15 +18,7 @@
                     <div class="row">
  
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email"> البريد الإلكتروني </label>
-                                <div class="input-with-icon-wrapper">
-                                    <input type="text" class="form-control" id="email" placeholder=" البريد الإلكتروني  ">
-                                    <i class="icon icon-email"></i>
-                                </div>
-                            </div><!-- form-group -->
-                        </div> <!-- col-md-6 --> 
+
 
                     </div>
  
