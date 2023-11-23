@@ -353,6 +353,7 @@ ul.custom-ul {
     border-radius: 10px;
     &:hover {
         box-shadow: var(--primaryColor50) 0px 8px 24px;
+        border-color: #FFF;
         *:not(.btn) {
             color: var(--primaryColor);
         }
@@ -492,7 +493,7 @@ footer.footer-wrapper {
 }
 
 .search-filter-wrapper {
-    margin-top: -50px;
+    margin-top: -115px;
     z-index: 2;
     position: relative;
 

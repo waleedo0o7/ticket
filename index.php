@@ -84,7 +84,7 @@
             </div> <!-- search-filter-wrapper -->
 
             <div class="available-time-wrapper mb-5">
-                <div class="container">
+                <div class="container p-0">
 
                     <div class="available-time-cards custom-card">
 

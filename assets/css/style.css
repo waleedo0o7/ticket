@@ -313,6 +313,7 @@ ul.custom-ul li::before {
 }
 .time-card:hover {
   box-shadow: var(--primaryColor50) 0px 8px 24px;
+  border-color: #FFF;
 }
 .time-card:hover *:not(.btn) {
   color: var(--primaryColor);
@@ -430,7 +431,7 @@ footer.footer-wrapper .footer-body-wrapper {
 }
 
 .search-filter-wrapper {
-  margin-top: -50px;
+  margin-top: -115px;
   z-index: 2;
   position: relative;
 }
