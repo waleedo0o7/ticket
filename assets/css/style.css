@@ -3,7 +3,7 @@
   --primaryColor50: #25b15d30;
   --primaryColorDark: #1d8647;
   --gray: #8d8d8d;
-  --grayLight: #FCFCFC;
+  --grayLight: #fcfcfc;
   --grayExtraLight: #f7f7f7b1;
 }
 
@@ -70,6 +70,10 @@ body {
 
 .page-content-50 {
   width: 50%;
+}
+
+.page-content-100 {
+  width: 100%;
 }
 
 .form-control {
@@ -246,6 +250,62 @@ label {
   padding: 10px;
 }
 
+ul.custom-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.custom-ul li {
+  position: relative;
+  padding-inline-start: 15px;
+}
+ul.custom-ul li::before {
+  content: "";
+  position: absolute;
+  background: var(--primaryColor);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top: 8px;
+  left: 0px;
+  border-radius: 50px;
+}
+
+.custom-accordion .card {
+  border-radius: unset !important;
+  background: transparent;
+  border: none;
+}
+.custom-accordion .card-header {
+  background: transparent;
+  border-radius: unset !important;
+  padding: 10px;
+  border: none;
+}
+.custom-accordion .card-header button {
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 22px;
+  color: var(--secondaryColor);
+  font-weight: bold;
+}
+.custom-accordion .card-header button:hover {
+  text-decoration: none;
+}
+.custom-accordion .btn-link:after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+}
+.custom-accordion .btn-link.collapsed:after {
+  content: "\f107";
+}
+
 .time-card {
   border: 1px solid var(--grayExtraLight);
   padding: 20px;
@@ -256,6 +316,14 @@ label {
 }
 .time-card:hover *:not(.btn) {
   color: var(--primaryColor);
+}
+
+.instruction-card {
+  text-align: center;
+}
+.instruction-card img {
+  width: 50px;
+  margin-bottom: 10px;
 }
 
 nav.top-nav-wrapper {
@@ -465,6 +533,20 @@ html[dir=rtl] .custom-checkbox .custom-control-label::before {
 html[dir=rtl] .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, html[dir=rtl] .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   left: unset !important;
   right: 0 !important;
+}
+html[dir=rtl] ul.custom-ul li::before {
+  right: 0px;
+}
+html[dir=rtl] .custom-accordion .card-header button {
+  text-align: right;
+}
+html[dir=rtl] .custom-accordion .btn-link:after {
+  right: unset;
+  left: 20px;
+}
+html[dir=rtl] .custom-accordion.gray-arrow .card {
+  margin-right: 0px !important;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

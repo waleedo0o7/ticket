@@ -1,12 +1,11 @@
 // main start
 
-
 :root {
     --primaryColor: #25b15d;
     --primaryColor50: #25b15d30;
     --primaryColorDark: #1d8647;
     --gray: #8d8d8d;
-    --grayLight: #FCFCFC;
+    --grayLight: #fcfcfc;
     --grayExtraLight: #f7f7f7b1;
 }
 
@@ -14,7 +13,6 @@ body {
     font-family: "Cairo", sans-serif;
     background-color: var(--grayLight);
 }
-
 
 .btn-primary {
     color: #fff;
@@ -68,7 +66,7 @@ body {
         border-color: var(--gray);
     }
 
-    &.btn-min-width{
+    &.btn-min-width {
         min-width: 210px;
     }
 }
@@ -81,8 +79,12 @@ body {
     width: 50%;
 }
 
-.form-control{
-    box-shadow : none !important;
+.page-content-100 {
+    width: 100%;
+}
+
+.form-control {
+    box-shadow: none !important;
 }
 
 .color-primary {
@@ -104,7 +106,6 @@ body {
     justify-content: space-between;
 
     &.homepage {
-
         nav.top-nav-wrapper {
             position: absolute;
             top: 0;
@@ -186,7 +187,7 @@ label {
     text-decoration: none !important;
     padding: 0px !important;
 
-    &:hover{
+    &:hover {
         color: var(--primaryColor);
     }
 }
@@ -204,8 +205,8 @@ label {
     background-repeat: no-repeat;
     padding: 60px 0;
 
-    &.no-bg{
-        background:none !important;
+    &.no-bg {
+        background: none !important;
     }
 }
 
@@ -236,24 +237,23 @@ label {
     }
 }
 
-
 .custom-checkbox {
     .custom-control-label {
-        padding-inline-end:  25px;
-        padding-inline-start:  25px;
+        padding-inline-end: 25px;
+        padding-inline-start: 25px;
     }
 
-    .custom-control-input:checked~.custom-control-label::before {
+    .custom-control-input:checked ~ .custom-control-label::before {
         background-color: var(--primaryColorDark);
     }
 
-    .custom-control-input:active~.custom-control-label::before {
+    .custom-control-input:active ~ .custom-control-label::before {
         color: #fff;
         background-color: var(--primaryColorDark);
     }
 
-    .custom-control-input:focus~.custom-control-label::before {
-        box-shadow:  none !important;
+    .custom-control-input:focus ~ .custom-control-label::before {
+        box-shadow: none !important;
     }
 }
 
@@ -275,15 +275,76 @@ label {
             margin: 0 5px;
         }
     }
-    
 }
-
 
 .action-success-wrapper {
     padding: 10px;
 }
 
+ul.custom-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        position: relative;
+        padding-inline-start: 15px;
+        &::before {
+            content: "";
+            position: absolute;
+            background: var(--primaryColor);
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            top: 8px;
+            left: 0px;
+            border-radius: 50px;
+        }
+    }
+}
 
+.custom-accordion {
+    .card {
+        border-radius: unset !important;
+        background: transparent;
+        border: none;
+    }
+
+    .card-header {
+        background: transparent;
+        border-radius: unset !important;
+        padding: 10px;
+        border: none;
+
+        button {
+            border-radius: 0;
+            width: 100%;
+            text-align: left;
+            padding: 15px 20px;
+            font-size: 22px;
+            color: var(--secondaryColor);
+            font-weight: bold;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .btn-link {
+        &:after {
+            content: "\f106";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 20px;
+            font-size: 18px;
+        }
+        &.collapsed {
+            &:after {
+                content: "\f107";
+            }
+        }
+    }
+}
 
 // components
 .time-card {
@@ -295,6 +356,14 @@ label {
         *:not(.btn) {
             color: var(--primaryColor);
         }
+    }
+}
+
+.instruction-card {
+    text-align: center;
+    img {
+        width: 50px;
+        margin-bottom: 10px;
     }
 }
 
@@ -529,8 +598,6 @@ html[dir="rtl"] {
         text-align: right;
     }
 
- 
-
     .custom-checkbox {
         .custom-control-label::before {
             left: unset;
@@ -543,5 +610,27 @@ html[dir="rtl"] {
                 right: 0 !important;
             }
         }
+    }
+
+    ul.custom-ul {
+        li {
+            &::before {
+                right: 0px;
+            }
+        }
+    }
+
+    .custom-accordion .card-header button {
+        text-align: right;
+    }
+
+    .custom-accordion .btn-link:after {
+        right: unset;
+        left: 20px;
+    }
+
+    .custom-accordion.gray-arrow .card {
+        margin-right: 0px !important;
+        margin-left: 15px;
     }
 }

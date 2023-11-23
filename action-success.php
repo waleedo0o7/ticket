@@ -10,7 +10,7 @@
 
                 <img src="assets/images/action-success.svg" class="img-fluid action-success-image mb-4" alt="">
 
-                <h3 class="mb-4"> تم تغيير كلمة المرور بنجاح </h3>
+                <h3 class="mb-4"> تمت بنجاح </h3>
 
                 <a href="index.php" class="btn btn-min-width btn-primary"> الذهاب للرئيسية </a>
 

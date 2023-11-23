@@ -117,7 +117,7 @@
                     </div><!-- social-login-wrapper -->
 
                     <div class="text-center mb-4">
-                        <a href="#" class="btn btn-primary"> الدخول كزائر </a>
+                        <a href="booking-step-1.php" class="btn btn-primary"> الدخول كزائر </a>
                     </div>
 
 
