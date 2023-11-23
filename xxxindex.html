@@ -25,7 +25,7 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>  Home page </title>
+    <title> Home page </title>
 
 </head>
 
@@ -54,23 +54,28 @@
 
                                 <li class="menu-item">
 
+
                                     <div class="dropdown">
-                                        <a class="menu-link" href="#" type="button" data-bs-toggle="dropdown">
+                                        <a href="#" class="menu-link" type="button"
+                                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+
                                             <img src="assets/images/flag-ksa.png" style="width: 20px;"
                                                 class="img-fluid flag" alt="">
                                             العربية
                                             <i class="fa fa-sm fa-chevron-down"></i>
+
                                         </a>
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <img src="assets/images/flag-uk.png" class="flag-sm" alt="">
-                                                    English
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">
+                                                <img src="assets/images/flag-uk.png" class="flag-sm" alt="">
+                                                English
+                                            </a>
+
+                                        </div>
                                     </div>
 
+ 
 
                                 </li>
 
@@ -135,59 +140,54 @@
                 <form>
                     <div class="container search-filter-form-container custom-card">
                         <div class="row">
-                            <div class="col-lg-4">
-                                <div class="form-group mb-3">
 
+                            <div class="col-lg-4">
+                                <div class="form-group">
                                     <div class="text-icon-wrapper mb-2">
                                         <i class="icon icon-time color-primary"></i>
                                         <label for="bransh" class="form-label"> اختر الفرع </label>
                                     </div>
-
-                                    <select id="bransh" class="form-select">
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </select>
-                                </div> <!-- form-group -->
+                                </div>
                             </div> <!-- col-lg-4 -->
 
-
                             <div class="col-lg-4">
-                                <div class="form-group mb-3">
-
+                                <div class="form-group">
                                     <div class="text-icon-wrapper mb-2">
                                         <i class="icon icon-global-search color-primary"></i>
-                                        <label for="bransh" class="form-label"> اختر الفرع </label>
+                                        <label for="bransh" class="form-label"> كل اللغات </label>
                                     </div>
-
-                                    <select id="bransh" class="form-select">
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </select>
-
-                                </div> <!-- form-group -->
+                                </div>
                             </div> <!-- col-lg-4 -->
-
 
                             <div class="col-lg-4">
-                                <div class="form-group mb-3">
-
+                                <div class="form-group">
                                     <div class="text-icon-wrapper mb-2">
-                                        <i class="icon icon-time color-primary"></i>
-                                        <label for="bransh" class="form-label"> اختر الفرع </label>
+                                        <i class="icon icon-ticket color-primary"></i>
+                                        <label for="bransh" class="form-label"> عدد التذاكر </label>
                                     </div>
-
-                                    <select id="bransh" class="form-select">
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
                                     </select>
-
-                                </div> <!-- form-group -->
+                                </div>
                             </div> <!-- col-lg-4 -->
-
-
 
                         </div>
                     </div><!-- container -->
@@ -204,7 +204,7 @@
                         </div> <!-- title-wrapper -->
 
                         <div class="row ">
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -227,10 +227,11 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
 
-                            <div class="col-md-2">
+
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -253,9 +254,10 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
-                            <div class="col-md-2">
+
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -278,9 +280,10 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
-                            <div class="col-md-2">
+
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -303,60 +306,19 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
-
-                            <div class="col-md-2">
-                                <div class="time-card mb-4">
-
-                                    <div class="time text-icon-wrapper mb-4">
-                                        <i class="icon icon-time"></i>
-                                        <p> 14:00 <span> م </span> </p>
-                                    </div>
-
-                                    <div class="language text-icon-wrapper image mb-4">
-                                        <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                        <p> جولة باللغة العربية </p>
-                                    </div>
-
-                                    <div class="tickets-count text-icon-wrapper mb-4">
-                                        <i class="icon icon-ticket"></i>
-                                        <p> متبقي <span> 10 </span> تذكره </p>
-                                    </div>
-
-                                    <div class="action-btn-wrapper">
-                                        <button href="#" class="btn btn-primary w-100"> حجز </button>
-                                    </div>
-
-                                </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
-
-                            <div class="col-md-2">
-                                <div class="time-card mb-4">
-
-                                    <div class="time text-icon-wrapper mb-4">
-                                        <i class="icon icon-time"></i>
-                                        <p> 14:00 <span> م </span> </p>
-                                    </div>
-
-                                    <div class="language text-icon-wrapper image mb-4">
-                                        <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                        <p> جولة باللغة العربية </p>
-                                    </div>
-
-                                    <div class="tickets-count text-icon-wrapper mb-4">
-                                        <i class="icon icon-ticket"></i>
-                                        <p> متبقي <span> 10 </span> تذكره </p>
-                                    </div>
-
-                                    <div class="action-btn-wrapper">
-                                        <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                                    </div>
-
-                                </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
 
-                            <div class="col-md-2">
+
+
+
+
+
+
+
+
+
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -379,10 +341,10 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
 
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -405,10 +367,10 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
 
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -431,10 +393,10 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
 
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <div class="time-card mb-4">
 
                                     <div class="time text-icon-wrapper mb-4">
@@ -457,33 +419,14 @@
                                     </div>
 
                                 </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
+                            </div> <!-- col-md-3 -->
 
 
-                            <div class="col-md-2">
-                                <div class="time-card mb-4">
 
-                                    <div class="time text-icon-wrapper mb-4">
-                                        <i class="icon icon-time"></i>
-                                        <p> 14:00 <span> م </span> </p>
-                                    </div>
 
-                                    <div class="language text-icon-wrapper image mb-4">
-                                        <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                        <p> جولة باللغة العربية </p>
-                                    </div>
 
-                                    <div class="tickets-count text-icon-wrapper mb-4">
-                                        <i class="icon icon-ticket"></i>
-                                        <p> متبقي <span> 10 </span> تذكره </p>
-                                    </div>
 
-                                    <div class="action-btn-wrapper">
-                                        <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                                    </div>
 
-                                </div><!-- time-card -->
-                            </div> <!-- col-md-2 -->
                         </div><!-- row -->
                     </div> <!-- available-time-cards -->
                 </div><!-- container -->
@@ -555,7 +498,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.2.1.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
