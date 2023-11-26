@@ -617,7 +617,7 @@ footer.footer-wrapper {
     .select-date-container {
         background: #fff;
         border-radius: 25px;
-        padding: 30px 30px;
+        padding: 15px 15px;
     }
 }
 
@@ -882,6 +882,9 @@ html[dir="rtl"] {
     input.hijri-date-input {
         width: 100%;
         margin-bottom: 20px;
+        opacity: 0;
+        position: absolute;
+        top: -20000;
     }
     .bootstrap-datetimepicker-widget .list-unstyled {
         padding: 0;
@@ -920,4 +923,18 @@ html[dir="rtl"] {
         font-weight: bold;
     }
 
+}
+
+
+.bootstrap-datetimepicker-widget.dropdown-menu:after, .bootstrap-datetimepicker-widget.dropdown-menu:before{
+    display: none;
+}
+
+
+.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.bottom {
+    border: none !important;
+}
+
+.datepicker tbody tr>td  {
+    border: 1px solid #f2f2f2;
 }
