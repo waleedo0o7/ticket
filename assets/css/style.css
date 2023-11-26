@@ -806,4 +806,8 @@ html[dir=rtl] .dropdown-menu {
   border: 1px solid #f2f2f2;
 }
 
+.datepicker tbody tr > td.day.active, .datepicker tbody tr > td.day.active:hover, .datepicker tbody tr > td.day.selected, .datepicker tbody tr > td.day.selected:hover {
+  background: var(--primaryColor);
+}
+
 /*# sourceMappingURL=style.css.map */
