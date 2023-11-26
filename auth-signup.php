@@ -42,8 +42,8 @@
                         <div class="col-md-6">
                             <div class="form-group mb-4">
                                 <label for="phone"> رقم الجوال </label>
-                                <div class="input-with-icon-wrapper">
-                                    <input type="text" class="form-control" id="phone" placeholder="   رقم الجوال      ">
+                                <div class="input-with-icon-wrapper phone-wrapper">
+                                    <input type="text" class="form-control phone" id="phone" placeholder="   رقم الجوال      ">
                                     <i class="icon icon-phone"></i>
                                 </div>
                             </div><!-- form-group -->
@@ -60,10 +60,6 @@
                             </div><!-- form-group -->
                         </div> <!-- col-md-6 -->
 
-
-
-
-
                         <div class="col-md-6">
                             <div class="form-group mb-4">
                                 <label for="date"> كلمة المرور </label>
@@ -73,9 +69,6 @@
                                 </div>
                             </div><!-- form-group -->
                         </div> <!-- col-md-6 -->
-
-
-
 
                         <div class="col-md-6">
                             <div class="form-group mb-4">
@@ -87,12 +80,10 @@
                             </div><!-- form-group -->
                         </div> <!-- col-md-6 -->
 
-
-
                         <div class="col-md-6">
                             <div class="form-group custom-control custom-checkbox mb-3">
                                 <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                                <label class="custom-control-label" for="customCheck"> أوافق على جميع الشروط و سياسة الخصوصية </label>
+                                <label class="custom-control-label" for="customCheck"> أوافق على جميع <a href="#" target="_blank"> الشروط و سياسة الخصوصية </a> </label>
                             </div>
                         </div> <!-- col-md-6 -->
 
@@ -117,7 +108,7 @@
                     </div><!-- social-login-wrapper -->
 
                     <div class="text-center mb-4">
-                        <a href="booking-step-1.php" class="btn btn-primary"> الدخول كزائر </a>
+                        <a href="booking-step-1.php" class="btn btn-primary-light"> تخطي الدخول كزائر </a>
                     </div>
 
 

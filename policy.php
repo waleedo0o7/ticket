@@ -8,7 +8,7 @@
 
             <div class="title-wrapper mb-4">
                 <h2 class="title bold"> الشروط و الأحكام </h2>
-            </div>
+            </div> <!-- title-wrapper -->
 
             <div class="polity-wrapper">
 
@@ -24,7 +24,7 @@
 
                 </ul>
 
-            </div>
+            </div> <!-- polity-wrapper -->
 
         </div> <!-- page-content-100 -->
 

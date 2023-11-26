@@ -18,6 +18,15 @@
     <!-- icons font -->
     <link href="https://file.myfontastic.com/SafnTVjMN5DQhWCkoMcKQg/icons.css" rel="stylesheet">
 
+    <!-- flag-icons -->
+    <link href="vendors/flag-icons/css/flag-icons.min.css" rel="stylesheet">
+
+    <!-- Tel Input -->
+    <link href="vendors/tel-input/css/intlTelInput.min.css" rel="stylesheet">
+
+    <!-- hijri datepicker -->
+    <link href="vendors/bootstrap-hijri-datepicker/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
     <!-- Custom -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -25,6 +34,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title> Home page </title>
+
+
+    
 
 </head>
 
@@ -46,7 +58,7 @@
                     <div class="logo-menu-wrapper">
 
                         <div class="logo-wrapper">
-                            <a href="#">
+                            <a href="index.php">
                                 <img src="assets/images/logo.png" class="img-fluid logo" alt="logo">
                             </a>
                         </div> <!-- logo-wrapper -->
@@ -54,43 +66,63 @@
                         <div class="menu-wrapper">
                             <ul class="reset-ul menu-items">
 
-                                <li class="menu-item"> <a href="#" class="menu-link"> الرئيسية </a> </li>
-
-                                <li class="menu-item"> <a href="#" class="menu-link"> احجز تذكرتك </a> </li>
-
                                 <li class="menu-item">
+                                    <a href="index.php" class="menu-link"> الرئيسية </a>
+                                </li>
 
+                                <li class="menu-item"> <a href="#" class="menu-link active"> احجز تذكرتك </a> </li>
 
-                                    <div class="dropdown">
-                                        <a href="#" class="menu-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <li class="menu-item dropdown ">
 
-                                            <img src="assets/images/flag-ksa.png" style="width: 20px;" class="img-fluid flag" alt="">
-                                            العربية
-                                            <i class="fa fa-sm fa-chevron-down"></i>
+                                    <a href="#" class="menu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="fi fi-sa"></span> العربية <i class="fa fa-sm fa-chevron-down"></i>
+                                    </a>
 
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">
-                                                <img src="assets/images/flag-uk.png" class="flag-sm" alt="">
-                                                English
-                                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                                        </div>
+                                        <a class="dropdown-item menu-link " href="#"> <span class="fi fi-gb "></span> English </a>
+
+                                        <a class="dropdown-item menu-link " href="#"> <span class="fi fi-us "></span>English</a>
+
+                                        <a class="dropdown-item menu-link active" href="#"> <span class="fi fi-gb "></span> English </a>
+
+                                        <a class="dropdown-item menu-link " href="#"> <span class="fi fi-us "></span> English 3 </a>
+
                                     </div>
-
-
 
                                 </li>
 
                             </ul>
+
                         </div> <!-- menu-wrapper -->
 
                     </div> <!-- logo-menu-wrapper -->
 
-                    <div class="auth-buttons">
+                    <div class="auth-buttons d-none">
                         <a href="auth-signup.php" class="btn btn-outline-primary "> إنشاء حساب </a>
                         <a href="auth-signin.php" class="btn btn-primary me-3"> تسجيل دخول </a>
                     </div> <!-- auth-buttons -->
+
+                    <div class="authorized-user-icon-wrapper">
+
+                        <div class="dropdown">
+
+                            <a href="#" class="menu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon icon-user"></i>
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                                <a class="dropdown-item menu-link " href="profile-edit-info.php">  الملف الشخصي  </a>
+
+
+                                <a class="dropdown-item menu-link " href="auth-signin.php"> خروج </a>
+
+                            </div> <!-- dropdown-menu -->
+
+                        </div> <!-- dropdown -->
+
+                    </div><!-- authorized-user-icon-wrapper -->
 
                     <!-- only-small-screens -->
                     <div id="hide-menu-btn">
@@ -104,7 +136,7 @@
         <div class="mobile-bar-menu-wrapper">
 
             <div class="logo-wrapper">
-                <a href="#">
+                <a href="index.php">
                     <img src="assets/images/logo.png" class="img-fluid logo" alt="logo">
                 </a>
             </div> <!-- logo-wrapper -->

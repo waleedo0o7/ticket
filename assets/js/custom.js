@@ -23,15 +23,41 @@ const swiper = new Swiper('.swiper', {
 
 function showMobileMenu() {
     $("#show-menu-btn").on("click", function () {
-        $(".top-nav-wrapper").show();
+        $(".top-nav-wrapper").addClass("show-menu");
+        $("body").css("overflow-y", "hidden");
+
     })
 }
 
 function hideMobileMenu() {
     $("#hide-menu-btn").on("click", function () {
-        $(".top-nav-wrapper").hide();
+        $(".top-nav-wrapper").removeClass("show-menu");
+        $("body").css("overflow-y", "auto");
     })
 }
 
 hideMobileMenu();
 showMobileMenu();
+
+
+$(function () {
+    $("#hijri-date-input").hijriDatePicker({
+        locale: "ar-sa",
+        format: "YYYY-MM-DD",
+        hijriFormat: "iYYYY-iMM-iDD",
+        dayViewHeaderFormat: "MMMM YYYY",
+        hijriDayViewHeaderFormat: "iMMMM iYYYY",
+        showSwitcher: true,
+        allowInputToggle: true,
+        useCurrent: true,
+        isRTL: true,
+        viewMode: 'days',
+        keepOpen: true,
+        hijri: false,
+        debug: true,
+        // showClear: true,
+        showTodayButton: true,
+        // showClose: true,
+    });
+});
+
