@@ -83,26 +83,26 @@
         </form>
     </div> <!-- search-filter-wrapper -->
 
-    <div class="select-date-filter-wrapper mb-5">
+    <div class="select-date-wrapper mb-5">
 
         <div class="container">
 
+            <div class="select-date-container custom-card">
 
-            <div class="form-group">
-                <label>
-                    Date
-                </label>
-                <div class="input-group">
-                    <input type='text' class="form-control" id="hijri-date-input" />
+                <div class="form-group">
+                    <div class="input-group hijri-input-wrapper">
+                        <input type='text' class="form-control hijri-date-input" id="hijri-date-input" />
+                    </div>
                 </div>
-            </div>
 
+            </div>
 
         </div><!-- container -->
 
-    </div>
+    </div> <!-- select-date-wrapper -->
 
     <div class="available-time-wrapper mb-5">
+
         <div class="container p-0">
 
             <div class="available-time-cards custom-card">
@@ -111,7 +111,7 @@
                     <h2 class="title text-center color-primary bold"> المواعيد المتاحة </h2>
                 </div> <!-- title-wrapper -->
 
-                <div class="row ">
+                <div class="row">
                     <div class="col-md-3">
                         <div class="time-card mb-4">
 
@@ -336,6 +336,7 @@
 
 
                 </div><!-- row -->
+
             </div> <!-- available-time-cards -->
         </div><!-- container -->
     </div><!-- available-time-wrapper -->

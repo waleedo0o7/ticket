@@ -19,13 +19,17 @@
     <link href="https://file.myfontastic.com/SafnTVjMN5DQhWCkoMcKQg/icons.css" rel="stylesheet">
 
     <!-- flag-icons -->
-    <link href="vendors/flag-icons/css/flag-icons.min.css" rel="stylesheet">
+    <link href="assets/vendors/flag-icons/css/flag-icons.min.css" rel="stylesheet">
 
     <!-- Tel Input -->
-    <link href="vendors/tel-input/css/intlTelInput.min.css" rel="stylesheet">
+    <link href="assets/vendors/tel-input/css/intlTelInput.min.css" rel="stylesheet">
+
+    
+    <!-- Flatpickr -->
+    <link href="assets/vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
 
     <!-- hijri datepicker -->
-    <link href="vendors/bootstrap-hijri-datepicker/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="assets/vendors/bootstrap-hijri-datepicker/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <!-- Custom -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -109,6 +113,8 @@
 
                             <a href="#" class="menu-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="icon icon-user"></i>
+                                <p class="m-0 user-name"> محمد احمد عبد الحميد محمد احمد عبد الحميد </p>
+                                <i class="fa fa-sm fa-chevron-down"></i>
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

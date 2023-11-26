@@ -42,7 +42,7 @@
                             <div class="form-group mb-4">
                                 <label for="phone"> رقم الجوال </label>
                                 <div class="input-with-icon-wrapper phone-wrapper">
-                                    <input type="text" class="form-control phone" id="phone" placeholder="   رقم الجوال      ">
+                                    <input type="text" class="form-control " id="phone" placeholder="   رقم الجوال      ">
                                     <i class="icon icon-phone"></i>
                                 </div>
                             </div><!-- form-group -->

@@ -70,24 +70,29 @@
 
 
 <!-- tel input -->
-<script src="vendors/tel-input/js/intlTelInput.min.js"></script>
+<script src="assets/vendors/tel-input/js/intlTelInput.min.js"></script>
+
+
+<script src="assets/vendors/flatpickr/flatpickr_ar.js"></script>
+<script src="assets/vendors/flatpickr/flatpickr.min.js"></script>
+
 
 <!-- moment hijri -->
-<script src="vendors/bootstrap-hijri-datepicker/src/js/momentjs.js"></script>
-<script src="vendors/bootstrap-hijri-datepicker/src/js/moment-with-locales.js"></script>
-<script src="vendors/bootstrap-hijri-datepicker/src/js/moment-hijri.js"></script>
-<script src="vendors/bootstrap-hijri-datepicker/src/js/bootstrap-hijri-datetimepicker.js"></script>
+<script src="assets/vendors/bootstrap-hijri-datepicker/src/js/momentjs.js"></script>
+<script src="assets/vendors/bootstrap-hijri-datepicker/src/js/moment-with-locales.js"></script>
+<script src="assets/vendors/bootstrap-hijri-datepicker/src/js/moment-hijri.js"></script>
+<script src="assets/vendors/bootstrap-hijri-datepicker/src/js/bootstrap-hijri-datetimepicker.js"></script>
 <!-- custom -->
 <script src="assets/js/custom.js"></script>
 
 <script>
+
     $(document).ready(function() {
         if (window.location.href.indexOf("index.php") > -1) {
             console.log("your url contains the name index.php");
             $(".body-wrapper").addClass("homepage")
         }
     });
-
 
     var input = document.querySelector("#phone");
     if ($('.phone').length > 0) {
@@ -113,23 +118,10 @@
             preferredCountries: ['sa'],
             // separateDialCode: true,
             showFlags: true,
-            utilsScript: "vendors/tel-input/js/utils.js"
+            utilsScript: "assets/vendors/tel-input/js/utils.js"
         });
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // Top Header cart popup --> increaseCount and decreaseCount START 
     let increaseCount = (event, b) => {
@@ -153,8 +145,8 @@
         }
         calcItemsPrice();
     }
-
-
+    
+    $(".date").flatpickr();
 
 </script>
 </body>

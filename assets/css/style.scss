@@ -152,9 +152,19 @@ a {
                     }
                 }
                 .authorized-user-icon-wrapper {
-                    i {
+                    .user-name {
                         color: #fff;
-                        font-size: 24px;
+                    }
+
+                    .dropdown > a.menu-link {
+                        i {
+                            color: #fff;
+                        }
+                        &:hover {
+                            i {
+                                color: #fff;
+                            }
+                        }
                     }
                 }
             }
@@ -242,9 +252,9 @@ label {
 }
 
 .dropdown {
-    .dropdown-item.active,
     .dropdown-item:active {
         background-color: var(--primaryColor);
+        color: #fff !important;
     }
 
     .menu-link {
@@ -275,11 +285,11 @@ label {
         }
     }
 
-    &.phone-wrapper{
+    &.phone-wrapper {
         .iti__flag-container {
             right: 35px !important;
         }
-        
+
         input.phone {
             padding-right: 92px;
         }
@@ -470,12 +480,28 @@ nav.top-nav-wrapper {
                 }
             }
         }
-        .auth-buttons {
-        }
         .authorized-user-icon-wrapper {
-            i {
-                color: #000;
-                font-size: 24px;
+            .user-name {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 100px;
+            }
+            .dropdown > a.menu-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                i {
+                    color: var(--primaryColor);
+                    margin: 0 5px;
+                    font-size: 14px;
+                }
+                &:hover {
+                    i {
+                        color: var(--primaryColorDark);
+                    }
+                }
             }
         }
     }
@@ -586,6 +612,15 @@ footer.footer-wrapper {
     }
 }
 
+
+.select-date-wrapper{
+    .select-date-container {
+        background: #fff;
+        border-radius: 25px;
+        padding: 30px 30px;
+    }
+}
+
 .available-time-cards {
     padding: 30px 30px;
     border-radius: 25px;
@@ -614,11 +649,18 @@ footer.footer-wrapper {
         &.show-menu {
             display: block;
             .authorized-user-icon-wrapper {
-                i {
-                    color: #fff;
+                .dropdown > a.menu-link {
+                    i {
+                        color: #fff;
+                    }
+                    &:hover {
+                        i {
+                            color: #fff;
+                        }
+                    }
                 }
                 .dropdown-menu {
-                    transform: translate3d(0px, -70px, 0px) !important;
+                    transform: translate3d(0px, -90px, 0px) !important;
                 }
             }
         }
@@ -762,31 +804,33 @@ html[dir="rtl"] {
         align-items: flex-start;
         justify-content: flex-start;
         background: #f6f6f6;
+        border-radius: 5px;
+        overflow: hidden;
         input {
-            width: 30px;
+            width: 60px;
+            height: 35px;
             border: 0;
             line-height: 0;
-            font-size: 14px;
+            font-size: 18px;
             text-align: center;
             background: #f6f6f6;
             color: #3f3f3f;
             appearance: none;
             outline: 0;
-            height: 30px;
         }
         span {
             font-size: 18px;
             cursor: pointer;
             user-select: none;
-            color: #6f6f6f;
-            background: #f6f6f6;
-            height: 30px;
-            width: 30px;
+            color: #fff;
+            background: var(--primaryColor);
+            width: 35px;
+            height: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
             i {
-                font-size: 10px;
+                font-size: 16px;
             }
         }
     }
@@ -794,4 +838,86 @@ html[dir="rtl"] {
 
 .iti {
     display: block;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day.selected:focus,
+.flatpickr-day.startRange:focus,
+.flatpickr-day.endRange:focus,
+.flatpickr-day.selected:hover,
+.flatpickr-day.startRange:hover,
+.flatpickr-day.endRange:hover,
+.flatpickr-day.selected.prevMonthDay,
+.flatpickr-day.startRange.prevMonthDay,
+.flatpickr-day.endRange.prevMonthDay,
+.flatpickr-day.selected.nextMonthDay,
+.flatpickr-day.startRange.nextMonthDay,
+.flatpickr-day.endRange.nextMonthDay {
+    background: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+    fill: var(--primaryColor);
+}
+
+.flatpickr-months .flatpickr-month {
+    height: 45px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.bottom {
+    position: relative !important;
+    inset: unset !important;
+}
+
+.hijri-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    input.hijri-date-input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .bootstrap-datetimepicker-widget .list-unstyled {
+        padding: 0;
+    }
+
+    .datepicker {
+        width: 100%;
+    }
+
+    .datepicker tbody tr>td.day.today{
+        background: rgba(37, 177 ,93 , 0.5)!important;
+
+    }
+
+    .bootstrap-datetimepicker-widget table td span {
+        color:  var(--primaryColor);
+        font-weight: bold;
+    }
+
+    .bootstrap-datetimepicker-widget table th.picker-switch {
+        color:  var(--primaryColor);
+        font-size: 18px;
+        padding: 10px;
+    }
+
+
+    .datepicker tbody tr>td span.hour.active, .datepicker tbody tr>td span.hour.active.focused:hover, .datepicker tbody tr>td span.hour.active:hover, .datepicker tbody tr>td span.hour.focused, .datepicker tbody tr>td span.hour.focused:hover, .datepicker tbody tr>td span.minute.active, .datepicker tbody tr>td span.minute.active.focused:hover, .datepicker tbody tr>td span.minute.active:hover, .datepicker tbody tr>td span.minute.focused, .datepicker tbody tr>td span.minute.focused:hover, .datepicker tbody tr>td span.month.active, .datepicker tbody tr>td span.month.active.focused:hover, .datepicker tbody tr>td span.month.active:hover, .datepicker tbody tr>td span.month.focused, .datepicker tbody tr>td span.month.focused:hover, .datepicker tbody tr>td span.year.active, .datepicker tbody tr>td span.year.active.focused:hover, .datepicker tbody tr>td span.year.active:hover, .datepicker tbody tr>td span.year.focused, .datepicker tbody tr>td span.year.focused:hover {
+        background :  var(--primaryColor)
+    }
+
+    .datepicker thead th.datepicker-switch,
+    .datepicker thead th.next,
+    .datepicker thead th.prev {
+        font-size: 32px;
+        color:  var(--primaryColor);
+        font-weight: bold;
+    }
+
 }

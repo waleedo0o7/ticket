@@ -41,6 +41,7 @@ showMobileMenu();
 
 
 $(function () {
+
     $("#hijri-date-input").hijriDatePicker({
         locale: "ar-sa",
         format: "YYYY-MM-DD",
@@ -55,9 +56,11 @@ $(function () {
         keepOpen: true,
         hijri: false,
         debug: true,
-        // showClear: true,
         showTodayButton: true,
-        // showClose: true,
     });
-});
 
+    setTimeout(() => {
+        $('#hijri-date-input').trigger('focus');
+    }, 100)
+
+});
