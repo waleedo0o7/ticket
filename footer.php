@@ -77,6 +77,9 @@
 <script src="assets/vendors/flatpickr/flatpickr.min.js"></script>
 
 
+<script src="assets/vendors/select2/select2.full.min.js"></script>
+
+
 <!-- moment hijri -->
 <script src="assets/vendors/bootstrap-hijri-datepicker/src/js/momentjs.js"></script>
 <script src="assets/vendors/bootstrap-hijri-datepicker/src/js/moment-with-locales.js"></script>
@@ -86,7 +89,6 @@
 <script src="assets/js/custom.js"></script>
 
 <script>
-
     $(document).ready(function() {
         if (window.location.href.indexOf("index.php") > -1) {
             console.log("your url contains the name index.php");
@@ -145,9 +147,13 @@
         }
         calcItemsPrice();
     }
-    
+
     $(".date").flatpickr();
 
+
+    $(document).ready(function() {
+        $('.select2').select2();
+    });
 </script>
 </body>
 

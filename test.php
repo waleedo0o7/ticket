@@ -51,7 +51,26 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        ...
+
+
+
+                        <div class="col-md-12">
+                            <div class="form-group custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                <label class="custom-control-label" for="customCheck"> أوافق على جميع <a href="#" target="_blank"> الشروط و سياسة الخصوصية </a> </label>
+                            </div>
+                        </div> <!-- col-md-6 -->
+
+
+                        <div class="col-md-12">
+                            <div class="form-group custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                                <label class="custom-control-label" for="customCheck"> أوافق على جميع <a href="#" target="_blank"> الشروط و سياسة الخصوصية </a> </label>
+                            </div>
+                        </div> <!-- col-md-6 -->
+
+
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

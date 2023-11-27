@@ -24,30 +24,30 @@
     <!-- Tel Input -->
     <link href="assets/vendors/tel-input/css/intlTelInput.min.css" rel="stylesheet">
 
-    
     <!-- Flatpickr -->
     <link href="assets/vendors/flatpickr/flatpickr.min.css" rel="stylesheet">
 
     <!-- hijri datepicker -->
     <link href="assets/vendors/bootstrap-hijri-datepicker/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- select2 -->
+    <link href="assets/vendors/select2/select2.full.min.js" rel="stylesheet" />
+
+
+
     <!-- Custom -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <title> Home page </title>
 
 
-    
-
 </head>
 
-
-<script>
-
-</script>
 
 <body>
 
@@ -119,7 +119,7 @@
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                                <a class="dropdown-item menu-link " href="profile-edit-info.php">  الملف الشخصي  </a>
+                                <a class="dropdown-item menu-link " href="profile-edit-info.php"> الملف الشخصي </a>
 
 
                                 <a class="dropdown-item menu-link " href="auth-signin.php"> خروج </a>
