@@ -6,13 +6,13 @@
 
         <div class="page-content-100">
 
-            <div class="title-wrapper mb-4">
-                <h2 class="title bold"> ماذا تشمل التذكرة </h2>
-            </div>
-
             <div class="row">
 
                 <div class="col-md-6">
+
+                    <div class="title-wrapper mb-4">
+                        <h2 class="title bold"> ماذا تشمل التذكرة </h2>
+                    </div>
 
 
                     <div class="instructions-wrapper">
@@ -32,15 +32,7 @@
                         </ul>
                     </div><!-- instructions-wrapper -->
 
-
-                    <div class="d-flex mb-4">
-                        <a href="policy.php" class="btn btn-outline-primary"> الشروط و الأحكام </a>
-                    </div>
-
-
-
-                    <div class="instructions-card-wrapper ">
-
+                    <div class="instructions-card-wrapper mb-3">
 
                         <div class="custom-accordion accordion" id="accordionExample">
                             <div class="card">
@@ -113,31 +105,23 @@
                                                     <p> الالتزام بتعليمات المنظمين </p>
                                                 </div><!-- instruction-card -->
                                             </div> <!-- col-md-4 -->
-
-
-
-
-
-
-
-
                                         </div><!-- row -->
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
 
                     </div><!-- instructions-card-wrapper -->
 
+                    <div class="d-block mb-4">
 
+                        <div class="mb-3">
+                            <a href="booking-step-3.php" class="btn btn-min-width btn-primary me-2"> استمرار </a>
+                        </div>
 
+                        <a href="policy.php" class="btn btn-link"> الشروط و الأحكام </a>
 
-
-
-
+                    </div>
 
 
                 </div> <!-- col-md-6 -->
@@ -219,12 +203,6 @@
                                         <p class="price text-success bold lead "> 20 <span> ر.س </span> </p>
                                     </div>
                                 </div> <!-- pref-item -->
-                            </div> <!-- col-md-6 -->
-
-
-
-                            <div class="col-md-6">
-                                <a href="action-success.php" class="btn btn-min-width btn-primary"> استمرار </a>
                             </div> <!-- col-md-6 -->
 
 

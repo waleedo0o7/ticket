@@ -3,7 +3,7 @@
   --primaryColor50: #25b15d55;
   --primaryColor10: #25b15d10;
   --primaryColorDark: #1d8647;
-  --gray: #8d8d8d;
+  --gray: #b4b4b4;
   --grayLight: #fcfcfc;
   --grayExtraLight: #f7f7f7b1;
 }
@@ -29,6 +29,18 @@ a {
 a:hover {
   color: var(--primaryColorDark);
   text-decoration: none;
+}
+
+.me-1 {
+  margin-inline-end: 5px;
+}
+
+.me-2 {
+  margin-inline-end: 10px;
+}
+
+.color-gray {
+  color: var(--gray);
 }
 
 .btn-primary {
@@ -253,6 +265,12 @@ label {
   opacity: 0.6;
   font-size: 14px;
 }
+.input-with-icon-wrapper .icon-image {
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  width: 38px;
+}
 .input-with-icon-wrapper.phone-wrapper .iti__flag-container {
   right: 35px !important;
 }
@@ -298,10 +316,12 @@ label {
   margin: 0 5px;
 }
 
-.action-success-wrapper, .action-failed-wrapper {
+.action-success-wrapper,
+.action-failed-wrapper {
   padding: 10px;
 }
-.action-success-wrapper img, .action-failed-wrapper img {
+.action-success-wrapper img,
+.action-failed-wrapper img {
   width: 220px;
 }
 
@@ -343,7 +363,7 @@ ul.custom-ul li::before {
   text-align: left;
   padding: 15px 20px;
   font-size: 22px;
-  color: var(--secondaryColor);
+  color: var(--primaryColor);
   font-weight: bold;
 }
 .custom-accordion .card-header button:hover {
@@ -701,6 +721,12 @@ html[dir=rtl] .modal .modal-header .close {
   border-radius: 5px;
   overflow: hidden;
 }
+.change-quantity-wrapper .counter.disabled {
+  opacity: 0.5;
+}
+.change-quantity-wrapper .counter.disabled * {
+  cursor: default !important;
+}
 .change-quantity-wrapper .counter input {
   width: 60px;
   height: 35px;
@@ -850,6 +876,220 @@ html[dir=rtl] .modal .modal-header .close {
 
 .custom-control {
   padding: 0 !important;
+}
+
+/*  CUSTOM RADIO CSS START  */
+.option-container {
+  position: relative;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  padding-left: 30px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.option-container.option-inline {
+  display: inline-flex;
+  width: auto;
+}
+.option-container.right-circle {
+  padding-left: 0px;
+}
+.option-container.right-circle .checkmark {
+  left: unset;
+  right: 0;
+}
+.option-container.disabled {
+  opacity: 0.5;
+}
+.option-container .option-icon {
+  width: 25px;
+}
+.option-container:hover input ~ .checkmark {
+  background-color: #fff;
+}
+.option-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.option-container .checkmark {
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-right: 0px;
+  border: 2px solid var(--gray);
+  background: #fff;
+}
+.option-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.option-container .checkmark:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+.option-container input:checked ~ .checkmark {
+  background-color: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+}
+.option-container input:checked ~ .checkmark:after {
+  display: block;
+}
+.option-container.checkbox-input input:checked ~ .checkmark:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.default .option-container {
+  font-size: 14px;
+  padding-left: 0;
+  margin-right: 5px;
+  flex-grow: 1;
+}
+.default .option-container .checkmark {
+  min-width: 65px;
+  height: 40px;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.default .option-container input[disabled] + .checkmark {
+  opacity: 0.4 !important;
+}
+.default .option-container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+.default .option-container .checkmark:after {
+  background: unset;
+}
+
+.colors .option-container {
+  padding-left: 0;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.colors .option-container .checkmark {
+  height: 23px;
+  width: 23px;
+  position: relative;
+  border-radius: 500px;
+  border: unset !important;
+}
+.colors .option-container input:checked ~ .checkmark {
+  background-color: transparent;
+}
+.colors .option-container .checkmark:after {
+  content: "";
+  position: absolute;
+  color: #fff;
+  top: -5px;
+  left: -5px;
+  background: transparent;
+  width: 33px;
+  height: 33px;
+  border: 2px solid var(--primaryColor);
+}
+
+.attributes-options.colors .option-container input:first-child:checked ~ .checkmark {
+  margin-left: 5px;
+}
+
+.attributes-options.colors .option-container .checkmark {
+  background-size: 100%;
+}
+
+.attributes-options-wrapper {
+  display: flex;
+}
+
+.attributes-options {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.attributes-options .options {
+  margin-bottom: 20px;
+}
+
+.attributes .label {
+  font-weight: bold;
+  font-size: 14px !important;
+  width: fit-content;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 120px;
+}
+
+/*  CUSTOM RADIO CSS START  */
+.checkout-total-wrapper {
+  height: auto;
+}
+.checkout-total-wrapper .price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.checkout-total-wrapper .price p.current-price {
+  font-size: 22px;
+  color: var(--primaryColor);
+  font-weight: bold;
+  margin: 0;
+  margin-right: 10px;
+}
+.checkout-total-wrapper .old-price {
+  font-size: 16px;
+  color: #f00;
+  text-decoration: line-through;
+  margin-bottom: 0;
+  line-height: 1.1;
+  margin-inline-start: 8px;
+}
+
+.select2-selection {
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0;
+  color: #555555;
+  font-size: 14px;
+  outline: 0;
+  min-height: 35px;
+}
+
+.select2-selection__rendered {
+  padding: 0.2rem 0.7rem;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #25b15d;
+  color: white;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 1px solid #aaa;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

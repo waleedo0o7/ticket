@@ -6,70 +6,75 @@
 
         <div class="page-content-100">
 
-
-
             <div class="row">
 
                 <div class="col-md-6">
 
                     <div class="title-wrapper mb-4">
-                        <h2 class="title bold"> طلب حجز </h2>
+                        <h2 class="title bold"> الدفع </h2>
                     </div>
 
-                    <div class="form-wrapper">
+                    <div class="attributes-options-wrapper d-block mb-4">
 
-                        <form>
+                        <label class="label mb-2 "> طرق الدفع </label>
 
+                        <div class="attributes-options default">
 
-                            <div class="form-group mb-4">
-                                <label for="name"> الاسم الأول واسم العائلة </label>
-                                <div class="input-with-icon-wrapper">
-                                    <input type="text" class="form-control" id="name" placeholder="  الاسم الأول واسم العائلة     ">
-                                    <i class="icon icon-user"></i>
-                                </div>
-                            </div><!-- form-group -->
+                            <label class="option-container option-inline">
+                                <input type="radio" checked="checked" name="size" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay-card-pos.svg" class="img-fluid me-2" alt=""> الدفع الإلكتروني </span>
+                            </label>
 
-                            <div class="form-group mb-4">
-                                <label for="email"> البريد الإلكتروني </label>
-                                <div class="input-with-icon-wrapper">
-                                    <input type="text" class="form-control" id="email" placeholder=" البريد الإلكتروني  ">
-                                    <i class="icon icon-email"></i>
-                                </div>
-                            </div><!-- form-group -->
+                            <label class="option-container option-inline">
+                                <input type="radio" name="size" value="2">
+                                <span class="checkmark"> <img src="assets/images/pay-link.svg" class="img-fluid me-2" alt=""> الدفع عن طريق الرابط </span>
 
-                            <div class="form-group mb-4">
-                                <label for="phone"> رقم الجوال </label>
-                                <div class="input-with-icon-wrapper phone-wrapper">
-                                    <input type="text" class="form-control " id="phone" placeholder="   رقم الجوال      ">
-                                    <i class="icon icon-phone"></i>
-                                </div>
-                            </div><!-- form-group -->
+                            </label>
 
-                            <div class="form-group">
-                                <div class="text-icon-wrapper mb-2">
-                                    <label for="exampleFormControlSelect1" class="form-label"> بلد الاقامة </label>
-                                </div>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div><!-- form-group -->
+                        </div> <!-- share-options-wrapper -->
+
+                    </div><!-- attributes-options-wrapper -->
 
 
-                            <div class="d-flex">
-                                <a href="booking-step-2.php" class="btn btn-min-width btn-primary"> استمرار </a>
-                            </div>
+                    <div class="d-block mb-4">
+
+                        <label class="label mb-2 "> أنواع الدفع </label>
+
+                        <img src="assets/images/wallet-cards.png" class="img-fluid w-100" alt="">
+                    </div>
+
+ 
+                    <div class="form-group mb-4">
+                        <label for="name"> كود الخصم </label>
+                        <div class="input-with-icon-wrapper">
+                            <input type="text" class="form-control" id="name" placeholder="  الاسم الأول واسم العائلة     ">
+                            <img src="assets/images/coupon.png" class="img-fluid icon-image" alt="">
+                        </div>
+                    </div><!-- form-group -->
+
+
+                    <div class="checkout-total-wrapper mb-3">
+
+                        <label for="name"> سعر الرحلة </label>
+
+                        <div class="price">
+                            <p class="current-price"> 50 ر.س </p>
+                            <div class="discount">
+                                <p class="old-price"> 2000 KD </p>
+                            </div><!-- discount -->
+                        </div>
+
+                    </div><!-- checkout-total-wrapper -->
+
+
+
+                    <div class="mb-3">
+                        <a href="booking-step-3.php" class="btn btn-min-width btn-primary me-2"> استمرار </a>
+                    </div>
 
 
 
 
-
-                        </form>
-
-                    </div><!-- form-wrapper -->
                 </div> <!-- col-md-6 -->
                 <div class="col-md-6">
 
@@ -139,20 +144,6 @@
                                 </div> <!-- pref-item -->
                             </div> <!-- col-md-6 -->
 
-
-
-                            <div class="col-md-6">
-                                <div class="pref-item mb-4">
-                                    <p class="mb-2"> سعر الرحلة </p>
-                                    <div class="text-icon-wrapper mb-2">
-                                        <i class="icon icon-cash color-primary"></i>
-                                        <p class="price text-success bold lead "> 20 <span> ر.س </span> </p>
-                                    </div>
-                                </div> <!-- pref-item -->
-                            </div> <!-- col-md-6 -->
-
-
-
                         </div><!-- row -->
 
                     </div> <!-- order-pref-wrapper -->
@@ -160,9 +151,6 @@
                 </div> <!-- col-md-6 -->
 
             </div> <!-- row -->
-
-
-
 
         </div> <!-- page-content-100 -->
 

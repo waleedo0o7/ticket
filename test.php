@@ -16,24 +16,18 @@
         <br /><br />
 
         <div class="change-quantity-wrapper">
-            <div class="counter">
+            <div class="counter disabled">
                 <span class="down" onClick='decreaseCount(event, this)'> <i class="fa fa-minus"></i> </span>
                 <input type="text" value="4">
                 <span class="up" onClick='increaseCount(event, this)'> <i class="fa fa-plus"></i></span>
             </div> <!-- counter -->
         </div><!-- change-quantity-wrapper -->
 
-
-
-
         <br /><br />
 
         <hr />
 
         <br /><br />
-
-
-
 
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -69,21 +63,74 @@
                             </div>
                         </div> <!-- col-md-6 -->
 
-
-
                     </div>
+
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
+
                 </div>
             </div>
         </div>
 
 
+        <br /><br />
+
+        <hr />
+
+        <br /><br />
+
+        
+
+        <div class="attributes-options-wrapper d-block">
+
+            <label class="label mb-2 lead"> Title </label>
+
+            <div class="attributes-options default">
+
+                <label class="option-container option-inline">
+                    <input type="radio" checked="checked" name="size" value="1">
+                    <span class="checkmark"> S </span>
+                </label>
+
+                <label class="option-container option-inline">
+                    <input type="radio" name="size" value="2">
+                    <span class="checkmark"> M </span>
+
+                </label>
+
+                <label class="option-container option-inline">
+                    <input type="radio" name="size" value="3">
+                    <span class="checkmark"> L </span>
+
+                </label>
 
 
-    </div> <!-- container -->
+                <label class="option-container option-inline">
+                    <input type="radio" name="size" value="4" disabled="disabled">
+                    <span class="checkmark"> XX </span>
+
+                </label>
+
+            </div> <!-- share-options-wrapper -->
+
+        </div><!-- attributes-options-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div> <!-- container -->
 
 </div> <!-- main-page-wrapper -->
 

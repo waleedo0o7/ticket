@@ -34,10 +34,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- select2 -->
-    <link href="assets/vendors/select2/select2.full.min.js" rel="stylesheet" />
-
-
-
+    <link href="assets/vendors/select2/select2.min.css" rel="stylesheet" />
+    
     <!-- Custom -->
     <link href="assets/css/style.css" rel="stylesheet">
 
