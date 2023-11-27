@@ -343,5 +343,4 @@
 
 </div> <!-- main-page-wrapper -->
 
-
 <?php include 'footer.php'; ?>

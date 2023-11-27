@@ -1,4 +1,4 @@
-<html lang="en" dir="rtl">
+<html dir="<?php if (isset($_GET['dir']))   echo $_GET['dir']; ?>">
 
 <head>
     <!-- Required meta tags -->

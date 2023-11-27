@@ -302,6 +302,11 @@ label {
         padding-inline-start: 25px;
     }
 
+    .custom-control-label::before {
+        background-color: #fff;
+        border: 2px solid #1d8647;
+    }
+
     .custom-control-input:checked ~ .custom-control-label::before {
         background-color: var(--primaryColorDark);
     }
@@ -336,8 +341,11 @@ label {
     }
 }
 
-.action-success-wrapper {
+.action-success-wrapper, .action-failed-wrapper {
     padding: 10px;
+    img {
+        width: 220px;
+    }
 }
 
 ul.custom-ul {
@@ -405,8 +413,15 @@ ul.custom-ul {
     }
 }
 
-.fi {
+.fi,
+.flag-icon {
     margin-inline-end: 5px;
+}
+
+.modal {
+    .modal-content {
+        border-radius: 20px;
+    }
 }
 
 // components
@@ -612,8 +627,7 @@ footer.footer-wrapper {
     }
 }
 
-
-.select-date-wrapper{
+.select-date-wrapper {
     .select-date-container {
         background: #fff;
         border-radius: 25px;
@@ -795,6 +809,12 @@ html[dir="rtl"] {
     .dropdown-menu {
         text-align: right;
     }
+
+    .modal {
+        .modal-header .close {
+            margin: -1rem auto -1rem -1rem;
+        }
+    }
 }
 
 .change-quantity-wrapper {
@@ -894,53 +914,73 @@ html[dir="rtl"] {
         width: 100%;
     }
 
-    .datepicker tbody tr>td.day.today{
-        background: rgba(37, 177 ,93 , 0.5)!important;
-
+    .datepicker tbody tr > td.day.today {
+        background: rgba(37, 177, 93, 0.5) !important;
     }
 
     .bootstrap-datetimepicker-widget table td span {
-        color:  var(--primaryColor);
+        color: var(--primaryColor);
         font-weight: bold;
     }
 
     .bootstrap-datetimepicker-widget table th.picker-switch {
-        color:  var(--primaryColor);
+        color: var(--primaryColor);
         font-size: 18px;
         padding: 10px;
     }
 
-
-    .datepicker tbody tr>td span.hour.active, .datepicker tbody tr>td span.hour.active.focused:hover, .datepicker tbody tr>td span.hour.active:hover, .datepicker tbody tr>td span.hour.focused, .datepicker tbody tr>td span.hour.focused:hover, .datepicker tbody tr>td span.minute.active, .datepicker tbody tr>td span.minute.active.focused:hover, .datepicker tbody tr>td span.minute.active:hover, .datepicker tbody tr>td span.minute.focused, .datepicker tbody tr>td span.minute.focused:hover, .datepicker tbody tr>td span.month.active, .datepicker tbody tr>td span.month.active.focused:hover, .datepicker tbody tr>td span.month.active:hover, .datepicker tbody tr>td span.month.focused, .datepicker tbody tr>td span.month.focused:hover, .datepicker tbody tr>td span.year.active, .datepicker tbody tr>td span.year.active.focused:hover, .datepicker tbody tr>td span.year.active:hover, .datepicker tbody tr>td span.year.focused, .datepicker tbody tr>td span.year.focused:hover {
-        background :  var(--primaryColor)
+    .datepicker tbody tr > td span.hour.active,
+    .datepicker tbody tr > td span.hour.active.focused:hover,
+    .datepicker tbody tr > td span.hour.active:hover,
+    .datepicker tbody tr > td span.hour.focused,
+    .datepicker tbody tr > td span.hour.focused:hover,
+    .datepicker tbody tr > td span.minute.active,
+    .datepicker tbody tr > td span.minute.active.focused:hover,
+    .datepicker tbody tr > td span.minute.active:hover,
+    .datepicker tbody tr > td span.minute.focused,
+    .datepicker tbody tr > td span.minute.focused:hover,
+    .datepicker tbody tr > td span.month.active,
+    .datepicker tbody tr > td span.month.active.focused:hover,
+    .datepicker tbody tr > td span.month.active:hover,
+    .datepicker tbody tr > td span.month.focused,
+    .datepicker tbody tr > td span.month.focused:hover,
+    .datepicker tbody tr > td span.year.active,
+    .datepicker tbody tr > td span.year.active.focused:hover,
+    .datepicker tbody tr > td span.year.active:hover,
+    .datepicker tbody tr > td span.year.focused,
+    .datepicker tbody tr > td span.year.focused:hover {
+        background: var(--primaryColor);
     }
 
     .datepicker thead th.datepicker-switch,
     .datepicker thead th.next,
     .datepicker thead th.prev {
         font-size: 32px;
-        color:  var(--primaryColor);
+        color: var(--primaryColor);
         font-weight: bold;
     }
-
 }
 
-
-.bootstrap-datetimepicker-widget.dropdown-menu:after, .bootstrap-datetimepicker-widget.dropdown-menu:before{
+.bootstrap-datetimepicker-widget.dropdown-menu:after,
+.bootstrap-datetimepicker-widget.dropdown-menu:before {
     display: none;
 }
-
 
 .bootstrap-datetimepicker-widget.dropdown-menu.usetwentyfour.bottom {
     border: none !important;
 }
 
-.datepicker tbody tr>td  {
+.datepicker tbody tr > td {
     border: 1px solid #f2f2f2;
 }
 
-
-.datepicker tbody tr>td.day.active, .datepicker tbody tr>td.day.active:hover, .datepicker tbody tr>td.day.selected, .datepicker tbody tr>td.day.selected:hover {
-    background:  var(--primaryColor);
+.datepicker tbody tr > td.day.active,
+.datepicker tbody tr > td.day.active:hover,
+.datepicker tbody tr > td.day.selected,
+.datepicker tbody tr > td.day.selected:hover {
+    background: var(--primaryColor);
 }
 
+.custom-control {
+    padding: 0 !important;
+}
