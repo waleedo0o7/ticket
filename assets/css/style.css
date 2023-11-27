@@ -739,6 +739,12 @@ html[dir=rtl] .modal .modal-header .close {
   appearance: none;
   outline: 0;
 }
+.change-quantity-wrapper .counter input.disabled {
+  opacity: 0.5;
+}
+.change-quantity-wrapper .counter input.disabled * {
+  cursor: default !important;
+}
 .change-quantity-wrapper .counter span {
   font-size: 18px;
   cursor: pointer;
@@ -753,6 +759,12 @@ html[dir=rtl] .modal .modal-header .close {
 }
 .change-quantity-wrapper .counter span i {
   font-size: 16px;
+}
+.change-quantity-wrapper .counter span.disabled {
+  opacity: 0.5;
+}
+.change-quantity-wrapper .counter span.disabled * {
+  cursor: default !important;
 }
 
 .iti {
