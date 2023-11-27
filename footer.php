@@ -125,7 +125,18 @@
 
     }
 
-    $(".decrease-count").on("click", function() {
+    // Top Header cart popup --> increaseCount and decreaseCount START 
+    let increaseCount = (event, b) => {
+        var input = b.previousElementSibling;
+        var value = parseInt(input.value, 10);
+
+        value = isNaN(value) ? 0 : value;
+        value++;
+        input.value = value; 
+    }
+
+    // Top Header cart popup --> increaseCount and decreaseCount END
+    let decreaseCount = (event, b) => {
         var input = b.nextElementSibling;
         var value = parseInt(input.value, 10);
         if (value > 1) {
@@ -133,41 +144,8 @@
             value--;
             input.value = value;
         }
-    })
-
-
-    $(".increase-count").on("click", function() {
-        var input = b.nextElementSibling;
-        var value = parseInt(input.value, 10);
-        if (value > 1) {
-            value = isNaN(value) ? 0 : value;
-            value--;
-            input.value = value;
-        }
-    })
-
-
-    // // Top Header cart popup --> increaseCount and decreaseCount START 
-    // let increaseCount = (event, b) => {
-    //     console.log(this);
-    //     var input = b.previousElementSibling;
-    //     var value = parseInt(input.value, 10);
-
-    //     value = isNaN(value) ? 0 : value;
-    //     value++;
-    //     input.value = value;
-    // }
-
-    // // Top Header cart popup --> increaseCount and decreaseCount END
-    // let decreaseCount = (event, b) => {
-    //     var input = b.nextElementSibling;
-    //     var value = parseInt(input.value, 10);
-    //     if (value > 1) {
-    //         value = isNaN(value) ? 0 : value;
-    //         value--;
-    //         input.value = value;
-    //     }
-    // }
+        calcItemsPrice();
+    }
 
     $(".date").flatpickr();
 

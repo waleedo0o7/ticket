@@ -848,12 +848,7 @@ html[dir="rtl"] {
         border-radius: 5px;
         overflow: hidden;
 
-        &.disabled {
-            opacity: 0.5;
-            * {
-                cursor: default !important;
-            }
-        }
+
 
         input {
             width: 60px;
@@ -866,13 +861,7 @@ html[dir="rtl"] {
             color: #3f3f3f;
             appearance: none;
             outline: 0;
-            &.disabled {
-                opacity: 0.5;
-                * {
-                    cursor: default !important;
-                }
-            }
-            
+
         }
         span {
             font-size: 18px;
@@ -885,20 +874,25 @@ html[dir="rtl"] {
             display: flex;
             justify-content: center;
             align-items: center;
+
             i {
                 font-size: 16px;
             }
 
-            &.disabled {
-                opacity: 0.5;
-                * {
-                    cursor: default !important;
-                }
-            }
+
 
         }
     }
 }
+
+
+
+.disabled, :disabled {
+    opacity: 0.5 !important;
+    cursor: default;
+}
+
+
 
 .iti {
     display: block;

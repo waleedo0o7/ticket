@@ -721,12 +721,6 @@ html[dir=rtl] .modal .modal-header .close {
   border-radius: 5px;
   overflow: hidden;
 }
-.change-quantity-wrapper .counter.disabled {
-  opacity: 0.5;
-}
-.change-quantity-wrapper .counter.disabled * {
-  cursor: default !important;
-}
 .change-quantity-wrapper .counter input {
   width: 60px;
   height: 35px;
@@ -738,12 +732,6 @@ html[dir=rtl] .modal .modal-header .close {
   color: #3f3f3f;
   appearance: none;
   outline: 0;
-}
-.change-quantity-wrapper .counter input.disabled {
-  opacity: 0.5;
-}
-.change-quantity-wrapper .counter input.disabled * {
-  cursor: default !important;
 }
 .change-quantity-wrapper .counter span {
   font-size: 18px;
@@ -760,11 +748,10 @@ html[dir=rtl] .modal .modal-header .close {
 .change-quantity-wrapper .counter span i {
   font-size: 16px;
 }
-.change-quantity-wrapper .counter span.disabled {
-  opacity: 0.5;
-}
-.change-quantity-wrapper .counter span.disabled * {
-  cursor: default !important;
+
+.disabled, :disabled {
+  opacity: 0.5 !important;
+  cursor: default;
 }
 
 .iti {
