@@ -539,10 +539,10 @@ footer.footer-wrapper .footer-body-wrapper {
   border-radius: 25px;
 }
 .available-time-cards .text-icon-wrapper.image {
-  align-items: flex-start;
+  align-items: center;
 }
 .available-time-cards .text-icon-wrapper.image img {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 @media all and (max-width: 800px) {
