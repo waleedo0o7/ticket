@@ -59,7 +59,7 @@
 
                                             <div class="col-md-4">
                                                 <div class="instruction-card mb-4">
-                                                    <img src="assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                                                    <img src="assets/images/instructions/a001.png" class="img-fluid" alt="">
                                                     <p> الالتزام بتعليمات المنظمين </p>
                                                 </div><!-- instruction-card -->
                                             </div> <!-- col-md-4 -->
@@ -80,7 +80,7 @@
 
                                             <div class="col-md-4">
                                                 <div class="instruction-card mb-4">
-                                                    <img src="assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                                                    <img src="assets/images/instructions/a002.png" class="img-fluid" alt="">
                                                     <p> الالتزام بتعليمات المنظمين </p>
                                                 </div><!-- instruction-card -->
                                             </div> <!-- col-md-4 -->
