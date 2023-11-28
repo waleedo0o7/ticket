@@ -36,7 +36,7 @@
                                 <i class="icon icon-time color-primary"></i>
                                 <label for="bransh" class="form-label"> اختر الفرع </label>
                             </div>
-                            <select class="form-control select2" id="exampleFormControlSelect1">
+                            <select class="form-control select2">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -52,7 +52,7 @@
                                 <i class="icon icon-global-search color-primary"></i>
                                 <label for="bransh" class="form-label"> كل اللغات </label>
                             </div>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control select2">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -68,7 +68,7 @@
                                 <i class="icon icon-ticket color-primary"></i>
                                 <label for="bransh" class="form-label"> عدد التذاكر </label>
                             </div>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control select2">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>

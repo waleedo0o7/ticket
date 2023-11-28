@@ -8,7 +8,7 @@
 
             <div class="action-failed-wrapper text-center">
 
-                <img src="assets/images/action-failed.png" class="img-fluid action-failed-image mb-4" alt="">
+                <img src="assets/images/action-failed.svg" class="img-fluid action-failed-image mb-4" alt="">
 
                 <h3 class="mb-4">   عفوا , خطأ غير معروف   </h3>
 

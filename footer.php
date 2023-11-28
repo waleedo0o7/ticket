@@ -132,7 +132,7 @@
 
         value = isNaN(value) ? 0 : value;
         value++;
-        input.value = value; 
+        input.value = value;
     }
 
     // Top Header cart popup --> increaseCount and decreaseCount END
@@ -153,6 +153,48 @@
     $(document).ready(function() {
         $('.select2').select2();
     });
+
+
+
+
+
+
+
+
+
+    //////////// Activate page start
+
+    $(document).on("click", ".activate-inputs input", function() {
+        $(this).select();
+    })
+
+    $(".activate-inputs input").on("keyup", function() {
+
+        if ($(this).val()) {
+            $(this).next().focus();
+            $(this).next().select();
+        }
+        
+        if ($(this).index() == 3) {
+            $(this).blur();
+
+            let activateCode = '';
+
+            $(".activate-inputs input").each(function() {
+                // console.log($(this).val());
+                activateCode += $(this).val();
+            });
+
+            $("#activate-code-input").val(activateCode);
+
+            setTimeout(() => {
+                $("#activate-code").submit();
+            }, 200);
+
+        }
+    })
+
+    //////////// Activate page end
 </script>
 </body>
 

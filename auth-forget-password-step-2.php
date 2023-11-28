@@ -6,47 +6,35 @@
 
         <div class="page-content-75">
 
-
             <div class="title-wrapper mb-4">
-                <h2 class="title bold">  تم إرسال رمز التحقق إلى البريد الإلكتروني  </h2>
+                <h2 class="title bold"> تم إرسال رمز التحقق إلى البريد الإلكتروني </h2>
             </div>
 
-            <div class="form-wrapper ">
 
-                <form>
 
-                    <div class="row">
+
+
+            <div class="form-container mb-0">
+
+                <p class="lead mb-2"> أدخل الرمز المكون من أربعة أرقام الذى أرسلناه   </p>
+
+                <div class="mb-3 activate-inputs-container">
  
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="email"> أدخل الرمز المكون من أربعة أرقام الذى أرسلناه </label>
-                                <div class="input-with-icon-wrapper">
-                                    <input type="text" class="form-control" id="email" placeholder=" أدخل الرمز المكون من أربعة أرقام الذى أرسلناه  ">
-                                    <i class="icon icon-email"></i>
-                                </div>
-                            </div><!-- form-group -->
-                        </div> <!-- col-md-6 -->
+                    <div class="activate-inputs">
+                        <input class="num1" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                        <input class="num2" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                        <input class="num3" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                        <input class="num4" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                    </div><!-- activate-inputs -->
 
-  
+                    <form action="test.php" id="activate-code" class="d-none">
+                        <input id="activate-code-input" name="code" type="text">
+                    </form>
 
-  
- 
+                </div>
 
-                    </div>
- 
-                    
- 
-                    <div class="text-center mb-4">
-                        <a  href="auth-forget-password-step-3.php" class="btn btn-min-width btn-primary">  استمرار     </a>
-                    </div>
- 
-
-
-
-                </form>
-
-            </div><!-- form-wrapper -->
+            </div><!-- form-container -->
 
         </div>
 
