@@ -20,7 +20,6 @@
 
                 <div class="mb-3 activate-inputs-container">
  
-
                     <div class="activate-inputs">
                         <input class="num1" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                         <input class="num2" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />

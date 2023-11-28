@@ -43,7 +43,7 @@
                         <img src="assets/images/wallet-cards.png" class="img-fluid w-100" alt="">
                     </div>
 
- 
+
                     <div class="form-group mb-4">
                         <label for="name"> كود الخصم </label>
                         <div class="input-with-icon-wrapper">
@@ -53,9 +53,50 @@
                     </div><!-- form-group -->
 
 
+
+
+                    <div class="checkout-total-wrapper  mb-3">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="default-price mb-3">
+                                    <label for="name"> السعر </label>
+                                    <div class="price">
+                                        <p class="current-price"> 50 ر.س </p>
+                                    </div>
+                                </div> <!-- default-price -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="after-promo-price">
+                                    <label for="name"> السعر بعد الخصم </label>
+                                    <div class="price">
+                                        <p class="current-price"> 30 ر.س </p>
+                                    </div>
+                                </div> <!-- default-price -->
+                            </div>
+                        </div>
+
+
+
+
+                    </div><!-- checkout-total-wrapper -->
+
+
+
+
+                    <div class="mb-3">
+                        <a href="booking-step-3.php" class="btn btn-min-width btn-primary me-2"> استمرار </a>
+                    </div>
+
+
+
+                    <br />
+                    <hr />
+                    <br />
+
                     <div class="checkout-total-wrapper mb-3">
 
-                        <label for="name"> سعر الرحلة </label>
+                        <label for="name"> السعر   </label>
 
                         <div class="price">
                             <p class="current-price"> 50 ر.س </p>
