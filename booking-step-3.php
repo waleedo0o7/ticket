@@ -46,9 +46,10 @@
 
                     <div class="form-group mb-4">
                         <label for="name"> كود الخصم </label>
-                        <div class="input-with-icon-wrapper">
+                        <div class="input-with-icon-wrapper input-with-submit-button">
                             <input type="text" class="form-control" id="name" placeholder="  الاسم الأول واسم العائلة     ">
                             <img src="assets/images/coupon.png" class="img-fluid icon-image" alt="">
+                            <a href="#" class="btn btn-primary"> تنفيذ </a>
                         </div>
                     </div><!-- form-group -->
 
@@ -87,8 +88,6 @@
                     <div class="mb-3">
                         <a href="booking-step-3.php" class="btn btn-min-width btn-primary me-2"> استمرار </a>
                     </div>
-
-
 
                     <br />
                     <hr />

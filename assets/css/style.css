@@ -119,6 +119,7 @@ a:hover {
 
 .form-control {
   box-shadow: none !important;
+  border-radius: 10px;
 }
 .form-control:focus {
   border-color: var(--primaryColor);
@@ -280,6 +281,15 @@ label {
 }
 .input-with-icon-wrapper.phone-wrapper input.phone {
   padding-right: 92px;
+}
+
+.input-with-submit-button {
+  position: relative;
+}
+.input-with-submit-button a.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .custom-checkbox .custom-control-label {
@@ -721,6 +731,10 @@ html[dir=rtl] .modal .modal-header .close {
 }
 html[dir=rtl] .activate-inputs {
   direction: ltr !important;
+}
+html[dir=rtl] .input-with-submit-button a.btn {
+  right: unset;
+  left: 0;
 }
 
 .change-quantity-wrapper .counter {

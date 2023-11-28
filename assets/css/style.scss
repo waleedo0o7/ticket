@@ -125,6 +125,7 @@ a {
 
 .form-control {
     box-shadow: none !important;
+    border-radius: 10px;
     &:focus {
         border-color: var(--primaryColor);
     }
@@ -317,6 +318,15 @@ label {
         input.phone {
             padding-right: 92px;
         }
+    }
+}
+
+.input-with-submit-button{
+    position: relative;
+    a.btn{
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 
@@ -852,6 +862,13 @@ html[dir="rtl"] {
 
     .activate-inputs{
         direction: ltr !important;
+    }
+
+    .input-with-submit-button{
+        a.btn{
+            right: unset;
+            left: 0;
+        }
     }
 
 
