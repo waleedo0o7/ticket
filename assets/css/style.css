@@ -434,9 +434,6 @@ button:focus {
   color: var(--primaryColor);
 }
 
-.instruction-card {
-  text-align: center;
-}
 .instruction-card img {
   width: 55px;
   height: 55px;
