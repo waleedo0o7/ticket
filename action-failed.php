@@ -12,7 +12,7 @@
 
                 <h3 class="mb-4">   عفوا , خطأ غير معروف   </h3>
 
-                <a href="index.php" class="btn btn-min-width btn-primary"> الذهاب للرئيسية </a>
+                <a href="home.php" class="btn btn-min-width btn-primary"> الذهاب للرئيسية </a>
 
             </div><!-- action-failed-wrapper -->
 

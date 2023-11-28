@@ -60,7 +60,7 @@
                     <div class="logo-menu-wrapper">
 
                         <div class="logo-wrapper">
-                            <a href="index.php">
+                            <a href="home.php">
                                 <img src="assets/images/logo.png" class="img-fluid logo" alt="logo">
                             </a>
                         </div> <!-- logo-wrapper -->
@@ -69,7 +69,7 @@
                             <ul class="reset-ul menu-items">
 
                                 <li class="menu-item">
-                                    <a href="index.php" class="menu-link"> الرئيسية </a>
+                                    <a href="home.php" class="menu-link"> الرئيسية </a>
                                 </li>
 
                                 <li class="menu-item"> <a href="#" class="menu-link active"> احجز تذكرتك </a> </li>
@@ -140,7 +140,7 @@
         <div class="mobile-bar-menu-wrapper">
 
             <div class="logo-wrapper">
-                <a href="index.php">
+                <a href="home.php">
                     <img src="assets/images/logo.png" class="img-fluid logo" alt="logo">
                 </a>
             </div> <!-- logo-wrapper -->

@@ -90,8 +90,8 @@
 
 <script>
     $(document).ready(function() {
-        if (window.location.href.indexOf("index.php") > -1) {
-            console.log("your url contains the name index.php");
+        if (window.location.href.indexOf("home.php") > -1) {
+            console.log("your url contains the name home.php");
             $(".body-wrapper").addClass("homepage")
         }
     });
