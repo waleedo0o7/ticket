@@ -174,7 +174,7 @@
             $(this).next().focus();
             $(this).next().select();
         }
-        
+
         if ($(this).index() == 3) {
             $(this).blur();
 
@@ -195,6 +195,28 @@
     })
 
     //////////// Activate page end
+
+    $(document).ready(function() {
+        // select country
+        $(".country-code-container .dropdown a").on("click", function() {
+            $("#country").val($(this).data("value"));
+            $(this).parents(".dropdown").children("button.dropdown-toggle").html(`<img alt="" src="${$(this).children("img").attr("src")}" /> ${$(this).text()} <i class="fa fa-chevron-down"></i>`)
+        });
+
+        let onErrorCountryCodeValues = () => {
+            let selectedIndex = $(".country-code-container #country option:selected").index() + 1;
+            let selectedHTML = $(`.country-code-container .choose-country-list a:nth-child(${selectedIndex})`).html();
+            $(".country-code-container button.dropdown-toggle").html(selectedHTML);
+        }
+
+        // auth change phone number page
+        if ($('.country-code-container').length > 0) {
+            onErrorCountryCodeValues();
+        }
+
+    });
+
+
 </script>
 </body>
 

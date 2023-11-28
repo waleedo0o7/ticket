@@ -404,6 +404,23 @@ ul.custom-ul li::before {
   border-radius: 20px;
 }
 
+.reset-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.reset-btn:after {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+button:focus {
+  outline: none !important;
+}
+
 .time-card {
   border: 1px solid var(--grayExtraLight);
   padding: 20px;
@@ -735,6 +752,9 @@ html[dir=rtl] .activate-inputs {
 html[dir=rtl] .input-with-submit-button a.btn {
   right: unset;
   left: 0;
+}
+html[dir=rtl] .form-group .country-code-container {
+  direction: ltr !important;
 }
 
 .change-quantity-wrapper .counter {
@@ -1187,6 +1207,84 @@ html[dir=rtl] .input-with-submit-button a.btn {
 }
 .activate-inputs-container .activate-inputs input:focus {
   border-color: var(--secondaryColor);
+}
+
+.form-group .input-with-country-code {
+  padding-left: 90px !important;
+}
+.form-group .country-code-container {
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+.form-group .country-code-container img {
+  width: 20px;
+  height: 14px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.form-group .country-code-container button {
+  height: 38px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90px;
+  color: #495057;
+  padding: 13px;
+}
+.form-group .country-code-container .dropdown-menu {
+  padding: 0;
+  overflow: hidden;
+  left: -1px !important;
+  border: 1px solid #b6b6b6;
+  margin: 0;
+}
+.form-group .country-code-container .dropdown-menu .dropdown-item {
+  padding: 5px 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.form-group .country-code-container .dropdown-menu .dropdown-item:hover {
+  background: var(--primaryColor);
+  color: #fff;
+}
+.form-group .country-code-container .dropdown-menu .fa-chevron-down {
+  display: none !important;
+}
+.form-group .country-code-container .fa-chevron-down {
+  position: relative;
+  color: #495057 !important;
+  font-size: 13px !important;
+  margin-top: 0;
+  padding: 5px;
+}
+
+.select-gender-wrapper input[type=radio] {
+  display: none;
+}
+.select-gender-wrapper input[type=radio]:checked ~ .label-male,
+.select-gender-wrapper input[type=radio]:checked ~ .label-female {
+  border: 2px solid var(--primaryColor);
+  border-radius: 10px;
+}
+.select-gender-wrapper .gender-radio-wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+.select-gender-wrapper .gender-radio-wrapper .form-check-label {
+  width: 60px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  background-size: 38px 38px;
+  border: 2px solid #eaeaea;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

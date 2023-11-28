@@ -459,6 +459,26 @@ ul.custom-ul {
     }
 }
 
+
+.reset-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    &:after {
+        display: none;
+    }
+}
+
+
+.relative{
+    position: relative;
+}
+
+button:focus{
+    outline: none !important;
+
+}
+
 // components
 .time-card {
     border: 1px solid var(--grayExtraLight);
@@ -871,6 +891,10 @@ html[dir="rtl"] {
         }
     }
 
+
+    .form-group .country-code-container {
+        direction: ltr !important;
+    }
 
     
 }
@@ -1369,6 +1393,108 @@ html[dir="rtl"] {
             &:focus {
                 border-color: var(--secondaryColor);
             }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.form-group {
+
+    .input-with-country-code {
+        padding-left: 90px !important;
+    }
+
+    .country-code-container {
+        position: absolute;
+        top: 28px;
+        left: 0;
+        img {
+            width: 20px;
+            height: 14px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        button {
+            height: 38px;
+            border-radius: 8px;
+            font-size: 14px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 90px;
+            color: #495057;
+            padding: 13px;
+        }
+        .dropdown-menu {
+            padding: 0;
+            overflow: hidden;
+            left: -1px !important;
+            border: 1px solid #b6b6b6;
+            margin: 0;
+            .dropdown-item {
+                padding: 5px 8px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                cursor: pointer;
+                &:hover {
+                    background: var(--primaryColor);
+                    color: #fff;
+                }
+            }
+            .fa-chevron-down {
+                display: none !important;
+            }
+        }
+        .fa-chevron-down {
+            position: relative;
+            color: #495057 !important;
+            font-size: 13px !important;
+            margin-top: 0;
+            padding: 5px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.select-gender-wrapper {
+    input[type="radio"] {
+        display: none;
+    }
+
+    input[type="radio"]:checked ~ .label-male,
+    input[type="radio"]:checked ~ .label-female {
+        border: 2px solid var(--primaryColor);
+        border-radius: 10px;
+    }
+
+    .gender-radio-wrapper {
+        display: inline-block;
+        cursor: pointer;
+        .form-check-label {
+            width: 60px;
+            height: 38px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            background-size: 38px 38px;
+            border: 2px solid #eaeaea;
+            cursor: pointer;
         }
     }
 }
