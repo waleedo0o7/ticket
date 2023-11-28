@@ -496,7 +496,9 @@ button:focus{
 .instruction-card {
     text-align: center;
     img {
-        width: 50px;
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
         margin-bottom: 10px;
     }
 }
