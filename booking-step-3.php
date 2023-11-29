@@ -35,14 +35,12 @@
 
                     </div><!-- attributes-options-wrapper -->
 
-
                     <div class="d-block mb-4">
 
                         <label class="label mb-2 "> أنواع الدفع </label>
 
                         <img src="assets/images/wallet-cards.png" class="img-fluid w-100" alt="">
                     </div>
-
 
                     <div class="form-group mb-4">
                         <label for="name"> كود الخصم </label>
@@ -55,65 +53,37 @@
 
 
 
+                    <div class="checkout-pref mb-4">
 
-                    <div class="checkout-total-wrapper  mb-3">
+                        <p class="d-flex justify-content-between align-items-center mb-2"> <strong> Subtotal </strong> <span class="bold"> 50.00 Kd </span> </p>
+                        <p class="d-flex justify-content-between align-items-center mb-2"> <strong> Taxes </strong> <span class=" bold"> 00,00 KD </span> </p>
+                        <p class="d-flex justify-content-between align-items-center mb-2"> <strong> Discount Promo Code </strong> <span class="danger bold"> 40,00 KD </span> </p>
 
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="default-price mb-3">
-                                    <label for="name"> السعر </label>
-                                    <div class="price">
-                                        <p class="current-price"> 50 ر.س </p>
-                                    </div>
-                                </div> <!-- default-price -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="after-promo-price">
-                                    <label for="name"> السعر بعد الخصم </label>
-                                    <div class="price">
-                                        <p class="current-price"> 30 ر.س </p>
-                                    </div>
-                                </div> <!-- default-price -->
-                            </div>
-                        </div>
+                        <hr />
 
 
+                        <div class="checkout-total-wrapper">
 
+                            <div class="checkout-total">
 
-                    </div><!-- checkout-total-wrapper -->
+                                <p class="lead mb-1"> الاجمالي </p>
 
+                                <div class="price">
+                                    <p class="current-price"> 500 ر.س </p>
+                                    <div class="discount">
+                                        <p class="old-price"> 800 ر.س </p>
+                                    </div><!-- discount -->
+                                </div>
 
+                            </div><!-- checkout-total -->
 
+                        </div><!-- checkout-total -->
+
+                    </div> <!-- checkout-pref -->
 
                     <div class="mb-3">
                         <a href="booking-step-3.php" class="btn btn-min-width btn-primary me-2"> استمرار </a>
                     </div>
-
-                    <br />
-                    <hr />
-                    <br />
-
-                    <div class="checkout-total-wrapper mb-3">
-
-                        <label for="name"> السعر   </label>
-
-                        <div class="price">
-                            <p class="current-price"> 50 ر.س </p>
-                            <div class="discount">
-                                <p class="old-price"> 2000 KD </p>
-                            </div><!-- discount -->
-                        </div>
-
-                    </div><!-- checkout-total-wrapper -->
-
-
-
-                    <div class="mb-3">
-                        <a href="booking-step-3.php" class="btn btn-min-width btn-primary me-2"> استمرار </a>
-                    </div>
-
-
-
 
                 </div> <!-- col-md-6 -->
                 <div class="col-md-6">
@@ -183,6 +153,21 @@
                                     </div>
                                 </div> <!-- pref-item -->
                             </div> <!-- col-md-6 -->
+
+                            <div class="col-md-6">
+                                <div class="checkout-total-wrapper">
+                                    <p> الاجمالي بدون ضرائب </p>
+                                    <div class="checkout-total">
+                                        <div class="price">
+                                            <p class="current-price"> 500 ر.س </p>
+                                            <div class="discount">
+                                                <p class="old-price"> 800 ر.س </p>
+                                            </div><!-- discount -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- col-md-6 -->
+
 
                         </div><!-- row -->
 

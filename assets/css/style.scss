@@ -12,7 +12,7 @@
 
 body {
     font-family: "Cairo", sans-serif;
-    background-color:  #fcfcfc;
+    background-color: #fcfcfc;
 }
 h1,
 h2,
@@ -23,7 +23,7 @@ h6 {
     line-height: 1.6;
 }
 
-p{
+p {
     font-size: 0.9rem;
 }
 
@@ -46,6 +46,10 @@ a {
 
 .color-gray {
     color: var(--gray);
+}
+
+.danger {
+    color: #f00;
 }
 
 .btn-primary {
@@ -321,9 +325,9 @@ label {
     }
 }
 
-.input-with-submit-button{
+.input-with-submit-button {
     position: relative;
-    a.btn{
+    a.btn {
         position: absolute;
         top: 0;
         right: 0;
@@ -459,7 +463,6 @@ ul.custom-ul {
     }
 }
 
-
 .reset-btn {
     background: none;
     border: none;
@@ -469,14 +472,12 @@ ul.custom-ul {
     }
 }
 
-
-.relative{
+.relative {
     position: relative;
 }
 
-button:focus{
+button:focus {
     outline: none !important;
-
 }
 
 // components
@@ -817,14 +818,11 @@ footer.footer-wrapper {
         width: 100% !important;
     }
 
-
     .activate-inputs-container .activate-inputs input {
         width: 50px;
         height: 50px;
         font-size: 28px;
     }
-
-
 }
 
 // RTL
@@ -880,24 +878,20 @@ html[dir="rtl"] {
         }
     }
 
-
-    .activate-inputs{
+    .activate-inputs {
         direction: ltr !important;
     }
 
-    .input-with-submit-button{
-        a.btn{
+    .input-with-submit-button {
+        a.btn {
             right: unset;
             left: 0;
         }
     }
 
-
     .form-group .country-code-container {
         direction: ltr !important;
     }
-
-    
 }
 
 .change-quantity-wrapper {
@@ -1279,7 +1273,7 @@ html[dir="rtl"] {
             color: var(--primaryColor);
             font-weight: bold;
             margin: 0;
-            margin-right: 10px;
+            margin-inline-end: 10px;
         }
     }
 
@@ -1319,17 +1313,16 @@ html[dir="rtl"] {
     outline: none;
 }
 
-
 .select2-container--default .select2-selection--single {
     border: 1px solid var(--grayLight) !important;
 }
 
 .select2-dropdown {
-    border: 1px solid  var(--grayLight) !important;
+    border: 1px solid var(--grayLight) !important;
 }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-    border: 1px solid var(--grayLight) !important
+    border: 1px solid var(--grayLight) !important;
 }
 
 .social-media-links {
@@ -1348,8 +1341,8 @@ html[dir="rtl"] {
         margin-inline-end: 10px;
         transition: all 0.3s ease-in-out;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-        &:hover{
-            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25); 
+        &:hover {
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
         }
     }
     .instagram {
@@ -1357,7 +1350,6 @@ html[dir="rtl"] {
         line-height: 250px;
         background: #d6249f;
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-
     }
     .facebook {
         background: #1877f2;
@@ -1367,12 +1359,8 @@ html[dir="rtl"] {
     }
 }
 
-
-
-
-
 .activate-inputs-container {
-    width: fit-content; 
+    width: fit-content;
     .activate-inputs {
         display: flex;
         justify-content: center;
@@ -1398,16 +1386,7 @@ html[dir="rtl"] {
     }
 }
 
-
-
-
-
-
-
-
-
 .form-group {
-
     .input-with-country-code {
         padding-left: 90px !important;
     }
@@ -1464,14 +1443,6 @@ html[dir="rtl"] {
     }
 }
 
-
-
-
-
-
-
-
-
 .select-gender-wrapper {
     input[type="radio"] {
         display: none;
@@ -1499,5 +1470,3 @@ html[dir="rtl"] {
         }
     }
 }
-
-

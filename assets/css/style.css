@@ -47,6 +47,10 @@ a:hover {
   color: var(--gray);
 }
 
+.danger {
+  color: #f00;
+}
+
 .btn-primary {
   color: #fff;
   background-color: var(--primaryColor);
@@ -1099,7 +1103,7 @@ html[dir=rtl] .form-group .country-code-container {
   color: var(--primaryColor);
   font-weight: bold;
   margin: 0;
-  margin-right: 10px;
+  margin-inline-end: 10px;
 }
 .checkout-total-wrapper .old-price {
   font-size: 16px;
