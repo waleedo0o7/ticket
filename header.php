@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
+
+    <!-- datatables -->
+    <link href="assets/vendors/datatables/datatables.min.css" rel="stylesheet" />
+
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,14 +39,12 @@
 
     <!-- select2 -->
     <link href="assets/vendors/select2/select2.min.css" rel="stylesheet" />
-    
+
+
     <!-- Custom -->
     <link href="assets/css/style.css" rel="stylesheet">
 
-
-
     <title> Home page </title>
-
 
 </head>
 

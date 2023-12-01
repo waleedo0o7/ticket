@@ -80,6 +80,10 @@
 <script src="assets/vendors/select2/select2.full.min.js"></script>
 
 
+
+<script src="assets/vendors/datatables/jquery.dataTables.min.js"></script>
+
+
 <!-- moment hijri -->
 <script src="assets/vendors/bootstrap-hijri-datepicker/src/js/momentjs.js"></script>
 <script src="assets/vendors/bootstrap-hijri-datepicker/src/js/moment-with-locales.js"></script>
@@ -147,19 +151,17 @@
         calcItemsPrice();
     }
 
-    $(".date").flatpickr();
+    if ($(".date").length) {
 
+        $(".date").flatpickr();
 
-    $(document).ready(function() {
+    }
+
+    if ($(".select2").length) {
+
         $('.select2').select2();
-    });
 
-
-
-
-
-
-
+    }
 
 
     //////////// Activate page start
@@ -214,9 +216,12 @@
             onErrorCountryCodeValues();
         }
 
+
+
+        new DataTable('#example');
+
+
     });
-
-
 </script>
 </body>
 
