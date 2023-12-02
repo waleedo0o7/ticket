@@ -76,13 +76,9 @@
 <script src="assets/vendors/flatpickr/flatpickr_ar.js"></script>
 <script src="assets/vendors/flatpickr/flatpickr.min.js"></script>
 
-
 <script src="assets/vendors/select2/select2.full.min.js"></script>
 
-
-
 <script src="assets/vendors/datatables/jquery.dataTables.min.js"></script>
-
 
 <!-- moment hijri -->
 <script src="assets/vendors/bootstrap-hijri-datepicker/src/js/momentjs.js"></script>

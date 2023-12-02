@@ -499,6 +499,7 @@ nav.top-nav-wrapper .top-nav .logo-menu-wrapper ul.menu-items > li.menu-item > a
   text-decoration: none;
   color: #000;
   display: flex;
+  cursor: pointer;
 }
 nav.top-nav-wrapper .top-nav .logo-menu-wrapper ul.menu-items > li.menu-item > a.menu-link.active {
   color: var(--primaryColor) !important;
@@ -641,7 +642,7 @@ footer.footer-wrapper .footer-body-wrapper {
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 9999;
+    z-index: 9;
     display: none;
   }
   .body-wrapper.homepage nav.top-nav-wrapper.show-menu,
@@ -791,6 +792,14 @@ html[dir=rtl] .dataTables_wrapper .dataTables_paginate {
 html[dir=rtl] table.dataTable thead th,
 html[dir=rtl] table.dataTable thead td {
   text-align: right;
+}
+html[dir=rtl] .option-container {
+  padding-left: unset;
+  padding-right: 30px;
+}
+html[dir=rtl] .option-container .checkmark {
+  left: unset;
+  right: 0;
 }
 
 .change-quantity-wrapper .counter {
@@ -1035,6 +1044,12 @@ html[dir=rtl] table.dataTable thead td {
   background: #fff;
 }
 
+.lang-and-currency-options .option-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .default .option-container {
   font-size: 14px;
   padding-left: 0;
@@ -1057,33 +1072,6 @@ html[dir=rtl] table.dataTable thead td {
 }
 .default .option-container .checkmark:after {
   background: unset;
-}
-
-.colors .option-container {
-  padding-left: 0;
-  margin-right: 10px;
-  margin-bottom: 0;
-}
-.colors .option-container .checkmark {
-  height: 23px;
-  width: 23px;
-  position: relative;
-  border-radius: 500px;
-  border: unset !important;
-}
-.colors .option-container input:checked ~ .checkmark {
-  background-color: transparent;
-}
-.colors .option-container .checkmark:after {
-  content: "";
-  position: absolute;
-  color: #fff;
-  top: -5px;
-  left: -5px;
-  background: transparent;
-  width: 33px;
-  height: 33px;
-  border: 2px solid var(--primaryColor);
 }
 
 .attributes-options.colors .option-container input:first-child:checked ~ .checkmark {

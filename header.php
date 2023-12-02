@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
-
     <!-- datatables -->
     <link href="assets/vendors/datatables/datatables.min.css" rel="stylesheet" />
 
@@ -22,8 +21,13 @@
     <!-- icons font -->
     <link href="https://file.myfontastic.com/SafnTVjMN5DQhWCkoMcKQg/icons.css" rel="stylesheet">
 
-    <!-- flag-icons -->
+    <!-- XXXX flag-icons -->
     <link href="assets/vendors/flag-icons/css/flag-icons.min.css" rel="stylesheet">
+
+
+    <!--  flag icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+
 
     <!-- Tel Input -->
     <link href="assets/vendors/tel-input/css/intlTelInput.min.css" rel="stylesheet">
@@ -39,7 +43,6 @@
 
     <!-- select2 -->
     <link href="assets/vendors/select2/select2.min.css" rel="stylesheet" />
-
 
     <!-- Custom -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -96,6 +99,16 @@
 
                                 </li>
 
+                                <li class="menu-item lang-currency-btn"> <a data-toggle="modal" data-target="#langCurrencyModal" class="menu-link">
+
+                                        <div class="flag-currency-wrapper">
+                                            <span class="flag-icon flag-icon-sa"></span>
+                                            <span> ر.س </span>
+                                        </div> <!-- flag-currency-wrapper -->
+
+                                    </a>
+                                </li>
+
                             </ul>
 
                         </div> <!-- menu-wrapper -->
@@ -120,7 +133,6 @@
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
                                 <a class="dropdown-item menu-link " href="profile-edit-info.php"> الملف الشخصي </a>
-
 
                                 <a class="dropdown-item menu-link " href="auth-signin.php"> خروج </a>
 
@@ -152,3 +164,102 @@
             </div><!-- toggle-menu-wrapper -->
 
         </div> <!-- mobile-bar-menu-wrapper -->
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="langCurrencyModal" tabindex="-1" role="dialog" aria-labelledby="langCurrencyModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="langCurrencyModalLabel"> اعدادت اللغة و العملة </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="language  mb-3 ">
+
+                            <h5> اللغة </h5>
+
+
+                            <div class="options-wrapper lang-and-currency-options">
+
+                                <label class="option-container ">
+                                    <input type="radio" checked="checked" name="report-reason" value="1">
+                                    <span class="checkmark"></span>
+                                    <p class="m-0"> عربي </p>
+                                    <span class="flag-icon flag-icon-sa"></span>
+                                </label>
+
+                                <label class="option-container ">
+                                    <input type="radio" name="report-reason" value="1">
+                                    <span class="checkmark"></span>
+                                    <p class="m-0"> english </p>
+                                    <span class="flag-icon flag-icon-am"></span>
+                                </label>
+
+
+                                <label class="option-container ">
+                                    <input type="radio" name="report-reason" value="1">
+                                    <span class="checkmark"></span>
+                                    <p class="m-0"> english </p>
+                                    <span class="flag-icon flag-icon-am"></span>
+                                </label>
+
+                            </div><!-- options-wrapper -->
+
+
+                        </div> <!-- language -->
+
+
+                        
+                        <div class="currency  mb-3 ">
+
+                            <h5> العملة </h5>
+
+
+                            <div class="options-wrapper lang-and-currency-options">
+
+                            <label class="option-container ">
+                                    <input type="radio" checked="checked" name="currency" value="1">
+                                    <span class="checkmark"></span>
+                                    <p class="m-0"> جنية مصري </p>
+                                    <p class="mb-0 color-gray"> EG </p>
+                                </label>
+ 
+                                <label class="option-container ">
+                                    <input type="radio" checked="checked" name="currency" value="1">
+                                    <span class="checkmark"></span>
+                                    <p class="m-0">    ريال سعودي </p>
+                                    <p class="mb-0 color-gray"> EG </p>
+                                </label>
+ 
+                                <label class="option-container ">
+                                    <input type="radio" checked="checked" name="currency" value="1">
+                                    <span class="checkmark"></span>
+                                    <p class="m-0"> جنية يوناني </p>
+                                    <p class="mb-0 color-gray"> EG </p>
+                                </label>
+ 
+
+                            </div><!-- options-wrapper -->
+
+
+                        </div> <!-- language -->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
