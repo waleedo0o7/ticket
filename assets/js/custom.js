@@ -57,10 +57,11 @@ $(function () {
         hijri: false,
         debug: true,
         showTodayButton: true,
+        minDate: new Date(),
     });
 
     setTimeout(() => {
         $('#hijri-date-input').trigger('focus');
-    }, 100)
+    }, 50)
 
 });

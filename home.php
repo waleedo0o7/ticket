@@ -30,11 +30,13 @@
             <div class="container search-filter-form-container custom-card">
                 <div class="row">
 
-                    <div class="col-lg-4">
-                        <div class="form-group">
+                    <div class="col ">
+
+
+                        <div class="form-group filter-input-wrapper">
                             <div class="text-icon-wrapper mb-2">
                                 <i class="icon icon-time color-primary"></i>
-                                <label for="bransh" class="form-label"> اختر الفرع </label>
+                                <label for="bransh" class="form-label"> الفرع </label>
                             </div>
                             <select class="form-control select2">
                                 <option>1</option>
@@ -44,13 +46,31 @@
                                 <option>5</option>
                             </select>
                         </div>
-                    </div> <!-- col-lg-4 -->
 
-                    <div class="col-lg-4">
-                        <div class="form-group">
+                    </div> <!-- col  -->
+
+                    <div class="col ">
+                        <div class="form-group filter-input-wrapper">
+                            <div class="text-icon-wrapper mb-2">
+                                <i class="icon icon-time color-primary"></i>
+                                <label for="bransh" class="form-label"> التوقيت</label>
+                            </div>
+                            <select class="form-control select2">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div> <!-- col  -->
+
+
+                    <div class="col ">
+                        <div class="form-group filter-input-wrapper">
                             <div class="text-icon-wrapper mb-2">
                                 <i class="icon icon-global-search color-primary"></i>
-                                <label for="bransh" class="form-label"> كل اللغات </label>
+                                <label for="bransh" class="form-label"> لغة الجولة </label>
                             </div>
                             <select class="form-control select2">
                                 <option>1</option>
@@ -60,10 +80,10 @@
                                 <option>5</option>
                             </select>
                         </div>
-                    </div> <!-- col-lg-4 -->
+                    </div> <!-- col  -->
 
-                    <div class="col-lg-4">
-                        <div class="form-group">
+                    <div class="col ">
+                        <div class="form-group filter-input-wrapper">
                             <div class="text-icon-wrapper mb-2">
                                 <i class="icon icon-ticket color-primary"></i>
                                 <label for="bransh" class="form-label"> عدد التذاكر </label>
@@ -76,9 +96,13 @@
                                 <option>5</option>
                             </select>
                         </div>
-                    </div> <!-- col-lg-4 -->
+                    </div> <!-- col  -->
 
-                </div>
+                    <div class="col d-flex justify-content-end align-items-center ">
+                        <a href="#" class="btn btn-outline-primary"> الغاء </a>
+                    </div> <!-- col  -->
+
+                </div> <!-- row -->
             </div><!-- container -->
         </form>
     </div> <!-- search-filter-wrapper -->
@@ -141,7 +165,7 @@
                                 <i class="icon icon-ticket"></i>
                                 <p> متبقي <span> 0 </span> تذكره </p>
                             </div> <!-- tickets-count -->
-                            
+
 
                             <div class="tickets-count-label text-center mb-4">
                                 <div class="custom-label danger">
@@ -150,13 +174,13 @@
                             </div> <!-- tickets-count-label -->
 
                             <div class="action-btn-wrapper">
-                                <button href="auth-signin.php" disabled  class="btn btn-primary w-100"> حجز </button>
+                                <button href="auth-signin.php" disabled class="btn btn-primary w-100"> حجز </button>
                             </div> <!-- action-btn-wrapper -->
 
                         </div><!-- time-card -->
                     </div> <!-- col-md-3 -->
 
- 
+
                     <div class="col-md-3">
                         <div class="time-card mb-4">
 
@@ -177,7 +201,7 @@
 
                             <div class="tickets-count-label mb-4">
                                 <div class="custom-label warning">
-                                     التذاكر المتبقية 6   
+                                    التذاكر المتبقية 6
                                 </div><!-- custom-label -->
                             </div> <!-- tickets-count-label -->
 
@@ -191,7 +215,7 @@
 
 
 
- 
+
 
                     <div class="col-md-3">
                         <div class="time-card mb-4">
@@ -213,7 +237,7 @@
 
                             <div class="tickets-count-label mb-4">
                                 <div class="custom-label success">
-                                     التذاكر المتبقية 30   
+                                    التذاكر المتبقية 30
                                 </div><!-- custom-label -->
                             </div> <!-- tickets-count-label -->
 
@@ -266,7 +290,7 @@
 
 
 
- 
+
 
 
 

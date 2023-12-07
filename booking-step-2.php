@@ -212,7 +212,7 @@
 
                                 <div class="d-flex justify-content-between align-items-center">
 
-                                    <div id="count-down-numbers" class="m-0">
+                                    <div id="count-down-numbers" class="count-down m-0" data-seconds="65">
                                         <span class="black" id="minutes">00</span>
                                         <span class="black" id="colon">:</span>
                                         <span class="black" id="seconds">00</span>
@@ -222,15 +222,15 @@
 
                                         <a href="#" class="btn btn-danger"> حذف </a>
 
+                                        <a href="#" class="btn btn-danger btn-action"> <i class="icon icon-delete"></i> </a>
+
                                         <a href="#" class="btn color-danger"><i class="icon icon-delete"></i></a>
 
                                     </div> <!-- action -->
 
                                 </div> <!-- d-flex -->
 
-                            </div>
-
-
+                            </div> <!-- col-md-12 -->
 
                         </div><!-- row -->
 

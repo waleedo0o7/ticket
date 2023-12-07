@@ -127,7 +127,7 @@ a:hover {
   min-width: 210px;
 }
 .btn.color-danger {
-  color: #F00;
+  color: #f00;
 }
 
 .page-content-75 {
@@ -737,7 +737,7 @@ footer.footer-wrapper .footer-body-wrapper {
   width: 100%;
 }
 .hijri-input-wrapper .datepicker tbody tr > td.day.today {
-  background: rgba(37, 177, 93, 0.5) !important;
+  background: var(--primaryColor) !important;
 }
 .hijri-input-wrapper .bootstrap-datetimepicker-widget table td span {
   color: var(--primaryColor);
@@ -787,7 +787,8 @@ footer.footer-wrapper .footer-body-wrapper {
   border: none !important;
 }
 
-.datepicker tbody tr > td {
+.datepicker tbody tr > td,
+.datepicker thead tr > th {
   border: 1px solid #f2f2f2;
 }
 
@@ -1415,6 +1416,9 @@ html[dir=rtl] .option-container .checkmark {
     left: 10px;
     color: #fff;
   }
+  .filter-input-wrapper {
+    min-width: 300px;
+  }
   .mobile-bar-menu-wrapper {
     display: flex;
     justify-content: space-between;
@@ -1445,6 +1449,22 @@ html[dir=rtl] .option-container .checkmark {
     height: 50px;
     font-size: 28px;
   }
+}
+.bootstrap-datetimepicker-widget table td.weekend {
+  background-color: #fff;
+}
+
+.hijri-input-wrapper .datepicker thead th.datepicker-switch,
+.hijri-input-wrapper .datepicker thead th.next span,
+.hijri-input-wrapper .datepicker thead th.prev span {
+  background: #fff;
+  line-height: 0px !important;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

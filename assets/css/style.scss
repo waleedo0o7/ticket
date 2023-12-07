@@ -132,7 +132,7 @@ a {
         min-width: 210px;
     }
     &.color-danger {
-        color: #F00;
+        color: #f00;
     }
 }
 
@@ -732,7 +732,6 @@ footer.footer-wrapper {
     }
 }
 
-
 .change-quantity-wrapper {
     .counter {
         width: fit-content;
@@ -839,7 +838,7 @@ footer.footer-wrapper {
     }
 
     .datepicker tbody tr > td.day.today {
-        background: rgba(37, 177, 93, 0.5) !important;
+        background: var(--primaryColor) !important;
     }
 
     .bootstrap-datetimepicker-widget table td span {
@@ -894,7 +893,8 @@ footer.footer-wrapper {
     border: none !important;
 }
 
-.datepicker tbody tr > td {
+.datepicker tbody tr > td,
+.datepicker thead tr > th {
     border: 1px solid #f2f2f2;
 }
 
@@ -1428,22 +1428,6 @@ footer.footer-wrapper {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ////////////////////////////////////////////////////////
 
 // RTL
@@ -1614,6 +1598,7 @@ html[dir="rtl"] {
                 }
             }
         }
+
         #hide-menu-btn {
             display: block;
             position: absolute;
@@ -1621,6 +1606,10 @@ html[dir="rtl"] {
             left: 10px;
             color: #fff;
         }
+    }
+
+    .filter-input-wrapper {
+        min-width: 300px;
     }
 
     .mobile-bar-menu-wrapper {
@@ -1657,4 +1646,21 @@ html[dir="rtl"] {
         height: 50px;
         font-size: 28px;
     }
+}
+
+.bootstrap-datetimepicker-widget table td.weekend {
+    background-color: #fff;
+}
+
+.hijri-input-wrapper .datepicker thead th.datepicker-switch,
+.hijri-input-wrapper .datepicker thead th.next span,
+.hijri-input-wrapper .datepicker thead th.prev span {
+    background: #fff;
+    line-height: 0px !important;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
 }
