@@ -228,10 +228,10 @@
 
 
 
-        let counterDownTwoMinutes = () => {
+        let counterDownTwoMinutes = (sec) => {
             let minutesLabel = document.getElementById("minutes");
             let secondsLabel = document.getElementById("seconds");
-            let totalSeconds = 5;
+            let totalSeconds = sec;
 
             setInterval(setTime, 1000);
 
@@ -251,14 +251,9 @@
                     return valString;
                 }
             }
-
-
-
         }
 
-
-
-        counterDownTwoMinutes()
+        counterDownTwoMinutes(65)
 
     });
 </script>

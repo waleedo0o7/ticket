@@ -36,7 +36,7 @@
 
 
                         <div id="count-down-numbers" class="mb-2">
-                            <span class="black" id="minutes">02</span>
+                            <span class="black" id="minutes">00</span>
                             <span class="black" id="colon">:</span>
                             <span class="black" id="seconds">00</span>
                         </div>

@@ -14,7 +14,6 @@
                         <h2 class="title bold"> ماذا تشمل التذكرة </h2>
                     </div>
 
-
                     <div class="instructions-wrapper">
                         <ul class="custom-ul">
                             <li>
@@ -123,8 +122,8 @@
 
                     </div>
 
-
                 </div> <!-- col-md-6 -->
+
                 <div class="col-md-6">
 
                     <div class="order-pref-wrapper custom-card p-4">
@@ -204,6 +203,26 @@
                                     </div>
                                 </div> <!-- pref-item -->
                             </div> <!-- col-md-6 -->
+
+
+
+                            <div class="col-md-12">
+
+                                <h3> الحجز قبل </h3>
+
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div id="count-down-numbers" class="m-0">
+                                        <span class="black" id="minutes">00</span>
+                                        <span class="black" id="colon">:</span>
+                                        <span class="black" id="seconds">00</span>
+                                    </div>
+
+                                    <a href="#" class="btn btn-primary"> حذف </a>
+
+                                </div> <!-- d-flex -->
+
+                            </div>
 
 
 
