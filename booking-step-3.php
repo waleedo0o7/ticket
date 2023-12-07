@@ -61,7 +61,6 @@
 
                         <hr />
 
-
                         <div class="checkout-total-wrapper">
 
                             <div class="checkout-total">

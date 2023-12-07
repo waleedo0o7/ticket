@@ -218,6 +218,49 @@
 
 
     });
+
+
+
+
+
+
+    $(document).ready(function() {
+
+
+
+        let counterDownTwoMinutes = () => {
+            let minutesLabel = document.getElementById("minutes");
+            let secondsLabel = document.getElementById("seconds");
+            let totalSeconds = 5;
+
+            setInterval(setTime, 1000);
+
+            function setTime() {
+                if (totalSeconds > 0) {
+                    --totalSeconds;
+                    secondsLabel.innerHTML = pad(totalSeconds % 60);
+                    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+                }
+            }
+
+            function pad(val) {
+                var valString = val + "";
+                if (valString.length < 2) {
+                    return "0" + valString;
+                } else {
+                    return valString;
+                }
+            }
+
+
+
+        }
+
+
+
+        counterDownTwoMinutes()
+
+    });
 </script>
 </body>
 

@@ -166,15 +166,6 @@
         </div> <!-- mobile-bar-menu-wrapper -->
 
 
-
-
-
-
-
-
-
-
-
         <!-- Modal -->
         <div class="modal fade" id="langCurrencyModal" tabindex="-1" role="dialog" aria-labelledby="langCurrencyModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -221,43 +212,38 @@
 
                         </div> <!-- language -->
 
-
-                        
                         <div class="currency  mb-3 ">
 
                             <h5> العملة </h5>
 
-
                             <div class="options-wrapper lang-and-currency-options">
 
-                            <label class="option-container ">
+                                <label class="option-container ">
                                     <input type="radio" checked="checked" name="currency" value="1">
                                     <span class="checkmark"></span>
                                     <p class="m-0"> جنية مصري </p>
                                     <p class="mb-0 color-gray"> EG </p>
                                 </label>
- 
+
                                 <label class="option-container ">
                                     <input type="radio" checked="checked" name="currency" value="1">
                                     <span class="checkmark"></span>
-                                    <p class="m-0">    ريال سعودي </p>
+                                    <p class="m-0"> ريال سعودي </p>
                                     <p class="mb-0 color-gray"> EG </p>
                                 </label>
- 
+
                                 <label class="option-container ">
                                     <input type="radio" checked="checked" name="currency" value="1">
                                     <span class="checkmark"></span>
                                     <p class="m-0"> جنية يوناني </p>
                                     <p class="mb-0 color-gray"> EG </p>
                                 </label>
- 
+
 
                             </div><!-- options-wrapper -->
 
 
                         </div> <!-- language -->
-
-
 
                     </div>
                 </div>

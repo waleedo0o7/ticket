@@ -10,16 +10,12 @@
                 <h2 class="title bold"> تم إرسال رمز التحقق إلى البريد الإلكتروني </h2>
             </div>
 
-
-
-
-
             <div class="form-container mb-0">
 
-                <p class="lead mb-2"> أدخل الرمز المكون من أربعة أرقام الذى أرسلناه   </p>
+                <p class="lead mb-2"> أدخل الرمز المكون من أربعة أرقام الذى أرسلناه </p>
 
                 <div class="mb-3 activate-inputs-container">
- 
+
                     <div class="activate-inputs">
                         <input class="num1" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
                         <input class="num2" type="text" maxlength="1" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
@@ -31,9 +27,42 @@
                         <input id="activate-code-input" name="code" type="text">
                     </form>
 
+
+
+                    <div class="mb-3">
+
+
+                        <p class="text-center mb-0"> إعادة الإرسال في </p>
+
+
+                        <div id="count-down-numbers" class="mb-2">
+                            <span class="black" id="minutes">02</span>
+                            <span class="black" id="colon">:</span>
+                            <span class="black" id="seconds">00</span>
+                        </div>
+
+                        <p class="d-block text-center mb-0">
+                            <span> لا يوجد تلقي للرمز ؟ </span>
+                            <a href="#"> إعادة إرسال الرمز </a>
+                        </p>
+
+
+
+                    </div><!-- submit-btn-container -->
+
+
                 </div>
 
+
+
+
             </div><!-- form-container -->
+
+
+
+
+
+
 
         </div>
 

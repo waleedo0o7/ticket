@@ -107,11 +107,23 @@
 
             <div class="available-time-cards custom-card">
 
-                <div class="title-wrapper mb-4">
+                <div class="title-wrapper mb-2">
                     <h2 class="title text-center color-primary bold"> المواعيد المتاحة </h2>
                 </div> <!-- title-wrapper -->
 
+                <div class="text-center mb-4">
+                    <p class="danger">
+                        <span> يوم 5 رجب </span>
+                        <span> - </span>
+                        <span> 1 فبراير </span>
+                    </p>
+                </div> <!-- text-center -->
+
                 <div class="row">
+
+
+
+
                     <div class="col-md-3">
                         <div class="time-card mb-4">
 
@@ -123,21 +135,63 @@
                             <div class="language text-icon-wrapper image mb-4">
                                 <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
                                 <p> جولة باللغة العربية </p>
-                            </div>
+                            </div> <!-- language -->
 
                             <div class="tickets-count text-icon-wrapper mb-4">
                                 <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
+                                <p> متبقي <span> 0 </span> تذكره </p>
+                            </div> <!-- tickets-count -->
+                            
+
+                            <div class="tickets-count-label text-center mb-4">
+                                <div class="custom-label danger">
+                                    بيعت بالكامل
+                                </div><!-- custom-label -->
+                            </div> <!-- tickets-count-label -->
+
+                            <div class="action-btn-wrapper">
+                                <button href="auth-signin.php" disabled  class="btn btn-primary w-100"> حجز </button>
+                            </div> <!-- action-btn-wrapper -->
+
+                        </div><!-- time-card -->
+                    </div> <!-- col-md-3 -->
+
+ 
+                    <div class="col-md-3">
+                        <div class="time-card mb-4">
+
+                            <div class="time text-icon-wrapper mb-4">
+                                <i class="icon icon-time"></i>
+                                <p> 14:00 <span> م </span> </p>
                             </div>
+
+                            <div class="language text-icon-wrapper image mb-4">
+                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
+                                <p> جولة باللغة العربية </p>
+                            </div> <!-- language -->
+
+                            <div class="tickets-count text-icon-wrapper mb-4">
+                                <i class="icon icon-ticket"></i>
+                                <p> متبقي <span> 6 </span> تذكره </p>
+                            </div> <!-- tickets-count -->
+
+                            <div class="tickets-count-label mb-4">
+                                <div class="custom-label warning">
+                                     التذاكر المتبقية 6   
+                                </div><!-- custom-label -->
+                            </div> <!-- tickets-count-label -->
 
                             <div class="action-btn-wrapper">
                                 <a href="auth-signin.php" class="btn btn-primary w-100"> حجز </a>
-                            </div>
+                            </div> <!-- action-btn-wrapper -->
 
                         </div><!-- time-card -->
                     </div> <!-- col-md-3 -->
 
 
+
+
+ 
 
                     <div class="col-md-3">
                         <div class="time-card mb-4">
@@ -150,19 +204,28 @@
                             <div class="language text-icon-wrapper image mb-4">
                                 <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
                                 <p> جولة باللغة العربية </p>
-                            </div>
+                            </div> <!-- language -->
 
                             <div class="tickets-count text-icon-wrapper mb-4">
                                 <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
+                                <p> متبقي <span> 30 </span> تذكره </p>
+                            </div> <!-- tickets-count -->
+
+                            <div class="tickets-count-label mb-4">
+                                <div class="custom-label success">
+                                     التذاكر المتبقية 30   
+                                </div><!-- custom-label -->
+                            </div> <!-- tickets-count-label -->
 
                             <div class="action-btn-wrapper">
                                 <a href="auth-signin.php" class="btn btn-primary w-100"> حجز </a>
-                            </div>
+                            </div> <!-- action-btn-wrapper -->
 
                         </div><!-- time-card -->
                     </div> <!-- col-md-3 -->
+
+
+
 
 
                     <div class="col-md-3">
@@ -176,42 +239,20 @@
                             <div class="language text-icon-wrapper image mb-4">
                                 <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
                                 <p> جولة باللغة العربية </p>
-                            </div>
+                            </div> <!-- language -->
 
                             <div class="tickets-count text-icon-wrapper mb-4">
                                 <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
+                                <p> متبقي <span> 30 </span> تذكره </p>
+                            </div> <!-- tickets-count -->
+
+                            <div class="tickets-count-label mb-4">
+
+                            </div> <!-- tickets-count-label -->
 
                             <div class="action-btn-wrapper">
                                 <a href="auth-signin.php" class="btn btn-primary w-100"> حجز </a>
-                            </div>
-
-                        </div><!-- time-card -->
-                    </div> <!-- col-md-3 -->
-
-
-                    <div class="col-md-3">
-                        <div class="time-card mb-4">
-
-                            <div class="time text-icon-wrapper mb-4">
-                                <i class="icon icon-time"></i>
-                                <p> 14:00 <span> م </span> </p>
-                            </div>
-
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div>
-
-                            <div class="tickets-count text-icon-wrapper mb-4">
-                                <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
-
-                            <div class="action-btn-wrapper">
-                                <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                            </div>
+                            </div> <!-- action-btn-wrapper -->
 
                         </div><!-- time-card -->
                     </div> <!-- col-md-3 -->
@@ -225,112 +266,7 @@
 
 
 
-
-                    <div class="col-md-3">
-                        <div class="time-card mb-4">
-
-                            <div class="time text-icon-wrapper mb-4">
-                                <i class="icon icon-time"></i>
-                                <p> 14:00 <span> م </span> </p>
-                            </div>
-
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div>
-
-                            <div class="tickets-count text-icon-wrapper mb-4">
-                                <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
-
-                            <div class="action-btn-wrapper">
-                                <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                            </div>
-
-                        </div><!-- time-card -->
-                    </div> <!-- col-md-3 -->
-
-
-                    <div class="col-md-3">
-                        <div class="time-card mb-4">
-
-                            <div class="time text-icon-wrapper mb-4">
-                                <i class="icon icon-time"></i>
-                                <p> 14:00 <span> م </span> </p>
-                            </div>
-
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div>
-
-                            <div class="tickets-count text-icon-wrapper mb-4">
-                                <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
-
-                            <div class="action-btn-wrapper">
-                                <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                            </div>
-
-                        </div><!-- time-card -->
-                    </div> <!-- col-md-3 -->
-
-
-                    <div class="col-md-3">
-                        <div class="time-card mb-4">
-
-                            <div class="time text-icon-wrapper mb-4">
-                                <i class="icon icon-time"></i>
-                                <p> 14:00 <span> م </span> </p>
-                            </div>
-
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div>
-
-                            <div class="tickets-count text-icon-wrapper mb-4">
-                                <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
-
-                            <div class="action-btn-wrapper">
-                                <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                            </div>
-
-                        </div><!-- time-card -->
-                    </div> <!-- col-md-3 -->
-
-
-                    <div class="col-md-3">
-                        <div class="time-card mb-4">
-
-                            <div class="time text-icon-wrapper mb-4">
-                                <i class="icon icon-time"></i>
-                                <p> 14:00 <span> م </span> </p>
-                            </div>
-
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div>
-
-                            <div class="tickets-count text-icon-wrapper mb-4">
-                                <i class="icon icon-ticket"></i>
-                                <p> متبقي <span> 10 </span> تذكره </p>
-                            </div>
-
-                            <div class="action-btn-wrapper">
-                                <button href="#" disabled class="btn btn-primary w-100"> حجز </button>
-                            </div>
-
-                        </div><!-- time-card -->
-                    </div> <!-- col-md-3 -->
-
-
-
+ 
 
 
 

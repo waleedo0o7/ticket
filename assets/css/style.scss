@@ -1398,7 +1398,7 @@ html[dir="rtl"] {
             margin: 5px;
             text-align: center;
             color: var(--secondaryColor);
-            font-size: 38px;
+            font-size: 28px;
             font-weight: bold;
             border: 2px solid var(--grayLight);
             &:focus {
@@ -1593,4 +1593,44 @@ html[dir="rtl"] {
 .dataTables_wrapper .dataTables_filter input {
     margin-left: unset !important;
     margin-inline-start: 10px !important;
+}
+
+#count-down-numbers {
+    width: fit-content;
+    margin: auto;
+    border-radius: 9px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: bold;
+
+    * {
+        color: var(--primaryColorDark);
+    }
+}
+
+
+.tickets-count-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45px;
+}
+
+.custom-label {
+    background: #3d3d3d;
+    text-align: center;
+    color: #fff !important;
+    padding: 10px;
+    width: fit-content;
+    min-width: 170px;
+    border-radius: 10px;
+    &.danger {
+        background: #ff6969;
+    }
+    &.success {
+        background: #25b15d;
+    }
+    &.warning {
+        background: #ebb62e;
+    }
 }
