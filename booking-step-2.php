@@ -216,9 +216,15 @@
                                         <span class="black" id="minutes">00</span>
                                         <span class="black" id="colon">:</span>
                                         <span class="black" id="seconds">00</span>
-                                    </div>
+                                    </div> <!-- count-down-numbers -->
 
-                                    <a href="#" class="btn btn-primary"> حذف </a>
+                                    <div class="action d-flex justify-content-center align-items-center">
+
+                                        <a href="#" class="btn btn-danger"> حذف </a>
+
+                                        <a href="#" class="btn color-danger"><i class="icon icon-delete"></i></a>
+
+                                    </div> <!-- action -->
 
                                 </div> <!-- d-flex -->
 

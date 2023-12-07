@@ -126,6 +126,9 @@ a:hover {
 .btn.btn-min-width {
   min-width: 210px;
 }
+.btn.color-danger {
+  color: #F00;
+}
 
 .page-content-75 {
   width: 75%;
