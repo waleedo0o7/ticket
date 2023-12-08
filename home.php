@@ -30,7 +30,7 @@
             <div class="container search-filter-form-container custom-card">
                 <div class="row">
 
-                    <div class="col ">
+                    <div class="col">
 
 
                         <div class="form-group filter-input-wrapper">
@@ -96,12 +96,17 @@
                                 <option>5</option>
                             </select>
                         </div>
+
+
                     </div> <!-- col  -->
 
-                    <div class="col d-flex justify-content-end align-items-center ">
-                        <a href="#" class="btn btn-outline-primary"> الغاء </a>
-                    </div> <!-- col  -->
 
+                    <div class="col ">
+                        <div class="action">
+                            <a href="#" class="btn w-100 btn-outline-primary"> الغاء </a>
+                        </div> <!-- action -->
+
+                    </div> <!-- col  -->
                 </div> <!-- row -->
             </div><!-- container -->
         </form>

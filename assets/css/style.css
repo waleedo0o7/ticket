@@ -618,6 +618,13 @@ footer.footer-wrapper .footer-body-wrapper {
   border-radius: 25px;
   padding: 30px 30px;
 }
+.search-filter-wrapper .search-filter-form-container .action {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
 
 .select-date-wrapper .select-date-container {
   background: #fff;
@@ -998,6 +1005,7 @@ footer.footer-wrapper .footer-body-wrapper {
 
 .select2-container--default .select2-selection--single {
   border: 1px solid var(--grayLight) !important;
+  border-radius: 10px;
 }
 
 .select2-dropdown {
