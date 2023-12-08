@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> template 1 </title>
+</head>
+
+<body>
+
+    <style>
+        @font-face {
+            font-family: "rubik";
+            src: url(rubik/static/Rubik-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: "rubik";
+            src: url(rubik/static/Rubik-Bold.ttf);
+            font-weight: bold;
+        }
+
+        body { 
+            font-family: 'rubik', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        * {
+            font-family: 'rubik', sans-serif;
+            font-size: 14px;
+        }
+
+        .template-wrapper {
+            width: 29.7cm;
+            height: 21cm;
+            position: relative;
+        }
+
+        .template-content {
+            width: 21.5cm;
+            margin: auto;
+            z-index: 9;
+            height: 100%;
+            position: relative;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+        }
+
+        .bg-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .form-wrapper {
+            position: absolute;
+            width: 14cm;
+            top: 10.5cm;
+            right: 0;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .w-50 {
+            width: 48%;
+        }
+
+        .d-inline {
+            display: inline-block;
+        }
+
+        .form-group .title-wrapper p {
+            color: #656565;
+            display: inline-block;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .form-group .title-wrapper {
+            margin-bottom: 10px;
+        }
+
+        .form-group input {
+            width: 100%;
+            border: none;
+            text-align: center;
+            height: 36px;
+            font-size: 18px;
+            background: transparent;
+            border: none !important;
+            outline: none !important;
+            font-weight: bold;
+        }
+
+        .tow-forms-wrapper .right {
+            margin-left: 2.5%;
+        }
+
+        .en-wrapper {
+            width: 49%;
+            display: inline-block;
+        }
+
+        .ar-wrapper {
+            width: 49%;
+            display: inline-block;
+            text-align: right;
+        }
+    </style>
+
+    <div class="template-wrapper">
+
+        <div class="bg-wrapper">
+            <img src="template-01.jpg" class="img-fluid" alt="">
+        </div>
+
+        <div class="template-content">
+
+            <div class="form-wrapper">
+
+                <div class="form-group">
+
+                    <div class="title-wrapper">
+                        <div class="en-wrapper">
+                            <p class="en"> Name </p>
+                        </div>
+
+                        <div class="ar-wrapper">
+                            <p class="ar"> الأسم </p>
+                        </div>
+                    </div>
+
+                    <input type="text" value="waleed saeed">
+
+                </div>
+
+
+                <div class="tow-forms-wrapper">
+
+                    <div class="form-group w-50 d-inline left">
+
+                        <div class="title-wrapper">
+                            <div class="en-wrapper">
+                                <p class="ar"> Ticket Number </p>
+                            </div>
+
+                            <div class="ar-wrapper">
+                                <p class="en"> رقم التذكرة </p>
+                            </div>
+                        </div>
+
+                        <input type="text" value="17963726">
+
+                    </div>
+
+
+                    <div class="form-group w-50 d-inline right">
+
+                        <div class="title-wrapper">
+                            <div class="en-wrapper">
+                                <p class="en"> Ticket Type </p>
+                            </div>
+
+                            <div class="ar-wrapper">
+                                <p class="ar"> نوع التذكرة </p>
+                            </div>
+                        </div>
+
+                        <input type="text" value="General Admission -">
+
+                    </div>
+
+                </div>
+
+
+                <div class="tow-forms-wrapper">
+
+                    <div class="form-group w-50 d-inline left">
+
+                        <div class="title-wrapper">
+                            <div class="en-wrapper">
+                                <p class="en"> Tour Time </p>
+                            </div>
+
+                            <div class="ar-wrapper">
+                                <p class="ar"> وقت الجولة </p>
+                            </div>
+                        </div>
+
+                        <input type="text" value="22:30 Mon 10 Apr 2023">
+
+                    </div>
+
+
+                    <div class="form-group w-50 d-inline right">
+
+                        <div class="title-wrapper">
+                            <div class="en-wrapper">
+                                <p class="en"> Date </p>
+                            </div>
+
+                            <div class="ar-wrapper">
+                                <p class="ar"> التاريخ </p>
+                            </div>
+                        </div>
+
+                        <input type="text" value="10 Apr 2023">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
