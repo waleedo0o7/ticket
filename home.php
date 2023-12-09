@@ -35,7 +35,7 @@
 
                         <div class="form-group filter-input-wrapper">
                             <div class="text-icon-wrapper mb-2">
-                                <i class="icon icon-time color-primary"></i>
+                                <i class="icon icon-branches color-primary"></i>
                                 <label for="bransh" class="form-label"> الفرع </label>
                             </div>
                             <select class="form-control select2">

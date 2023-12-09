@@ -895,8 +895,8 @@ footer.footer-wrapper .footer-body-wrapper {
 .default .option-container {
   font-size: 14px;
   padding-left: 0;
-  margin-right: 5px;
   flex-grow: 1;
+  width: 50%;
 }
 .default .option-container .checkmark {
   min-width: 65px;
@@ -916,24 +916,16 @@ footer.footer-wrapper .footer-body-wrapper {
   background: unset;
 }
 
-.attributes-options.colors .option-container input:first-child:checked ~ .checkmark {
-  margin-left: 5px;
-}
-
-.attributes-options.colors .option-container .checkmark {
-  background-size: 100%;
-}
-
 .attributes-options-wrapper {
   display: flex;
 }
 
 .attributes-options {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .attributes-options .options {
   margin-bottom: 20px;
@@ -1339,14 +1331,6 @@ html[dir=rtl] table.dataTable thead th,
 html[dir=rtl] table.dataTable thead td {
   text-align: right;
 }
-html[dir=rtl] .option-container {
-  padding-left: unset;
-  padding-right: 30px;
-}
-html[dir=rtl] .option-container .checkmark {
-  left: unset;
-  right: 0;
-}
 
 @media all and (max-width: 800px) {
   .body-wrapper.homepage nav.top-nav-wrapper,
@@ -1473,6 +1457,24 @@ html[dir=rtl] .option-container .checkmark {
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
+}
+
+.hijri-input-wrapper .datepicker tbody tr > td.day.today {
+  background: unset !important;
+  color: #000 !important;
+}
+
+.hijri-input-wrapper .datepicker tbody tr > td.day.today.active {
+  background: var(--primaryColor) !important;
+  color: #fff !important;
+}
+
+.datepicker tbody tr > td.day.today:before {
+  border-bottom-color: var(--primaryColor) !important;
+}
+
+.datepicker tbody tr > td.day.today.active:before {
+  border-bottom-color: #fff !important;
 }
 
 /*# sourceMappingURL=style.css.map */

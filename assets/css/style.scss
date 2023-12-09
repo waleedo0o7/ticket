@@ -1018,8 +1018,8 @@ footer.footer-wrapper {
     .option-container {
         font-size: 14px;
         padding-left: 0;
-        margin-right: 5px;
         flex-grow: 1;
+        width: 50%;
 
         .checkmark {
             min-width: 65px;
@@ -1044,24 +1044,16 @@ footer.footer-wrapper {
     }
 }
 
-.attributes-options.colors .option-container input:first-child:checked ~ .checkmark {
-    margin-left: 5px;
-}
-
-.attributes-options.colors .option-container .checkmark {
-    background-size: 100%;
-}
-
 .attributes-options-wrapper {
     display: flex;
 }
 
 .attributes-options {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
     .options {
         margin-bottom: 20px;
@@ -1520,15 +1512,6 @@ html[dir="rtl"] {
     table.dataTable thead td {
         text-align: right;
     }
-
-    .option-container {
-        padding-left: unset;
-        padding-right: 30px;
-        .checkmark {
-            left: unset;
-            right: 0;
-        }
-    }
 }
 
 ////////////////////////////////////////////////////////
@@ -1671,4 +1654,22 @@ html[dir="rtl"] {
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
+}
+
+.hijri-input-wrapper .datepicker tbody tr > td.day.today {
+    background: unset !important;
+    color: #000 !important;
+}
+
+.hijri-input-wrapper .datepicker tbody tr > td.day.today.active {
+    background: var(--primaryColor) !important;
+    color: #fff !important;
+}
+
+.datepicker tbody tr > td.day.today:before {
+    border-bottom-color: var(--primaryColor) !important;
+}
+
+.datepicker tbody tr > td.day.today.active:before {
+    border-bottom-color: #fff !important;
 }
