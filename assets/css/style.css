@@ -12,6 +12,15 @@
   outline: none !important;
 }
 
+@font-face {
+  font-family: "rubik";
+  src: url(rubik/static/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: "rubik";
+  src: url(rubik/static/Rubik-Bold.ttf);
+  font-weight: bold;
+}
 body {
   font-family: "Cairo", sans-serif;
   background-color: #fcfcfc;
@@ -1277,6 +1286,106 @@ footer.footer-wrapper .footer-body-wrapper {
   background: #ebb62e;
 }
 
+.bootstrap-datetimepicker-widget table td.weekend {
+  background-color: #fff;
+}
+
+.hijri-input-wrapper .datepicker thead th.datepicker-switch,
+.hijri-input-wrapper .datepicker thead th.next span,
+.hijri-input-wrapper .datepicker thead th.prev span {
+  background: #fff;
+  line-height: 0px !important;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.hijri-input-wrapper .datepicker tbody tr > td.day.today {
+  background: unset !important;
+  color: #000 !important;
+}
+
+.hijri-input-wrapper .datepicker tbody tr > td.day.today.active {
+  background: var(--primaryColor) !important;
+  color: #fff !important;
+}
+
+.datepicker tbody tr > td.day.today:before {
+  border-bottom-color: var(--primaryColor) !important;
+}
+
+.datepicker tbody tr > td.day.today.active:before {
+  border-bottom-color: #fff !important;
+}
+
+.one-ticket-wrapper {
+  font-family: "rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 2.15;
+}
+.one-ticket-wrapper .template-wrapper {
+  position: relative;
+}
+.one-ticket-wrapper .template-wrapper .bg-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #fff;
+}
+.one-ticket-wrapper .form-wrapper {
+  position: absolute;
+  top: 24.8%;
+  right: 14%;
+  width: 47%;
+}
+.one-ticket-wrapper .w-50 {
+  width: 48% !important;
+}
+.one-ticket-wrapper .d-inline {
+  display: inline-block !important;
+}
+.one-ticket-wrapper .form-group {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.one-ticket-wrapper .form-group .title-wrapper {
+  margin-bottom: 0px;
+}
+.one-ticket-wrapper .form-group .title-wrapper p {
+  color: #656565;
+  display: inline-block;
+  font-size: inherit;
+  margin: 0;
+}
+.one-ticket-wrapper .form-group input {
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: inherit;
+  background: transparent;
+  border: none !important;
+  outline: none !important;
+  font-weight: bold;
+}
+.one-ticket-wrapper .tow-forms-wrapper .right {
+  margin-left: 2.5%;
+}
+.one-ticket-wrapper .en-wrapper {
+  width: 49%;
+  display: inline-block;
+}
+.one-ticket-wrapper .ar-wrapper {
+  width: 49%;
+  display: inline-block;
+  text-align: right;
+}
+
 html[dir=rtl] body {
   font-family: "Cairo", sans-serif;
   text-align: right;
@@ -1330,6 +1439,10 @@ html[dir=rtl] .dataTables_wrapper .dataTables_paginate {
 html[dir=rtl] table.dataTable thead th,
 html[dir=rtl] table.dataTable thead td {
   text-align: right;
+}
+html[dir=rtl] .one-ticket-wrapper,
+html[dir=rtl] .one-ticket-wrapper * {
+  direction: ltr !important;
 }
 
 @media all and (max-width: 800px) {
@@ -1442,39 +1555,42 @@ html[dir=rtl] table.dataTable thead td {
     font-size: 28px;
   }
 }
-.bootstrap-datetimepicker-widget table td.weekend {
-  background-color: #fff;
+@media all and (max-width: 1200px) {
+  .one-ticket-wrapper {
+    font-size: 12.5px;
+  }
 }
-
-.hijri-input-wrapper .datepicker thead th.datepicker-switch,
-.hijri-input-wrapper .datepicker thead th.next span,
-.hijri-input-wrapper .datepicker thead th.prev span {
-  background: #fff;
-  line-height: 0px !important;
-  height: 50px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5px;
+@media all and (max-width: 770px) {
+  .one-ticket-wrapper {
+    font-size: 10.5px;
+  }
+  .one-ticket-wrapper .form-group {
+    margin-bottom: 11px;
+  }
 }
-
-.hijri-input-wrapper .datepicker tbody tr > td.day.today {
-  background: unset !important;
-  color: #000 !important;
+@media all and (max-width: 430px) {
+  .one-ticket-wrapper {
+    font-size: 5px;
+  }
+  .one-ticket-wrapper .form-group {
+    margin-bottom: 11.5px;
+  }
 }
-
-.hijri-input-wrapper .datepicker tbody tr > td.day.today.active {
-  background: var(--primaryColor) !important;
-  color: #fff !important;
+@media all and (max-width: 380px) {
+  .one-ticket-wrapper {
+    font-size: 3px;
+  }
+  .one-ticket-wrapper .form-group {
+    margin-bottom: 6px;
+  }
 }
-
-.datepicker tbody tr > td.day.today:before {
-  border-bottom-color: var(--primaryColor) !important;
-}
-
-.datepicker tbody tr > td.day.today.active:before {
-  border-bottom-color: #fff !important;
+@media all and (max-width: 320px) {
+  .one-ticket-wrapper {
+    font-size: 3px;
+  }
+  .one-ticket-wrapper .form-group {
+    margin-bottom: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
