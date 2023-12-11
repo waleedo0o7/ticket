@@ -34,7 +34,6 @@
 
         .template-wrapper {
             width: 29.7cm;
-            height: 21cm;
             position: relative;
         }
 
@@ -44,6 +43,7 @@
             z-index: 9;
             height: 100%;
             position: relative;
+            padding-bottom: 80px;
         }
 
         .img-fluid {
@@ -134,6 +134,14 @@
             margin-bottom: 70px;
         }
 
+        .mb-2 {
+            margin-bottom: 20px;
+        }
+
+        .mb-0 {
+            margin-bottom: 0px;
+        }
+
         .scan-image-wrapper {
             background: linear-gradient(45deg, rgba(15, 176, 94, 1) 10%, rgba(1, 143, 179, 1) 90%);
             padding: 8px;
@@ -162,7 +170,7 @@
 
         .form-and-title-wrapper .section-title-wrapper {
             position: absolute;
-            top: 290px;
+            top: 300px;
             right: 0;
             width: 14cm;
             background: rgba(15, 176, 94, 1);
@@ -179,7 +187,129 @@
             float: right;
         }
 
-        .form-and-title-wrapper .section-title-wrapper p.en {}
+
+        .text-with-star-icon-wrapper {
+            background: #e1e2e1;
+            border-radius: 10px;
+            margin-right: 20px;
+            min-height: 60px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-right: 40px;
+        }
+
+        .star-image {
+            width: 50px;
+            position: absolute;
+            top: 0;
+            right: -20px;
+        }
+
+        .text-with-star-icon-wrapper {
+            position: relative;
+        }
+
+
+        .text-with-star-icon-wrapper p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .text-with-star-icon-wrapper p.ar {
+            direction: rtl;
+            margin-bottom: 5px;
+        }
+
+        span.special-text {
+            color: #fff;
+            background: linear-gradient(45deg, rgba(15, 176, 94, 1) 10%, rgba(1, 143, 179, 1) 90%);
+            padding: 1px 5px;
+            border-radius: 5px;
+            font-size: larger;
+            display: inline-block;
+            margin-top: 2px;
+        }
+
+        .main-section-title-wrapper {
+            direction: rtl;
+            text-align: center;
+
+        }
+
+        .main-section-title-wrapper p {
+            display: inline-block;
+            font-size: 28px;
+        }
+
+        .main-section-title-wrapper .ar {
+            margin-left: 10px;
+        }
+
+        .instruction-cards {
+            text-align: center;
+        }
+
+        .instruction-card {
+            text-align: center;
+            display: inline-block;
+            width: 19.5%;
+            margin: auto;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+
+        .instruction-card img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            margin-bottom: 0px;
+            margin-bottom: 5px;
+        }
+
+        .instruction-card p {
+            margin: 0;
+        }
+
+        .instruction-text {
+            color: #fff;
+            background: #3c3c3c;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+
+
+        .footer-text-wrapper p {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+
+
+        .footer-icons-wrapper {
+            text-align: right;
+        }
+
+        .footer-text-wrapper p.ar {
+            float: right;
+        }
+
+        .footer-icons-wrapper p {
+            margin: 0;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer-icons-wrapper p img {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .footer-icons-wrapper p span {
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 16px;
+        }
     </style>
 
     <div class="template-wrapper">
@@ -195,7 +325,7 @@
                 <img src="template-header.jpg" style="width : 100%" alt="">
             </div>
 
-            <div class="scan-and-form-wrapper">
+            <div class="scan-and-form-wrapper mb-2">
 
 
                 <div class="scan-wrapper">
@@ -214,7 +344,6 @@
                         <p class="ar"> تفاصيل التذكرة </p>
                         <p class="en"> Détails du billet </p>
                     </div>
-
 
                     <div class="form-wrapper">
 
@@ -316,13 +445,104 @@
 
 
 
+            </div> <!-- scan-and-form-wrapper -->
+
+            <div class="text-with-star-icon-wrapper">
+                <img src="star.png" class="star-image">
+                <p class="ar"> هذه التذكرة صالحة في وقت الجولة فقط نرجو الحضور قبل وقت الجولة <span
+                        class="special-text"> بـ 5 دقائق </span> </p>
+                <p class="en">
+
+                    Ce billet est valable au moment de la visite uniquement. Veuillez arriver avant l'heure de la visite
+                    <span class="special-text"> Dans 5 minutes</span>
+                </p>
+            </div>
+
+            <div class="main-section-title-wrapper">
+                <p class="ar"> تعليمات الدخول </p>
+                <p class="en"> Instructions de connexion </p>
+            </div>
+
+            <div class="instruction-cards mb-2">
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> المنظمين </p>
+                        <p> Respect des consignes des organisateurs </p>
+                    </div>
+                </div>
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> الالتزام الالتزام الالتزام بتعليمات المنظمين </p>
+                        <p> Respect des consignes des organisateurs </p>
+                    </div>
+                </div>
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> الالتزام بتعليمات المنظمين </p>
+                        <p> Respect des consignes des organisateurs </p>
+                    </div>
+                </div>
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> الالتزام بتعليمات المنظمين </p>
+                        <p> Respect </p>
+                    </div>
+                </div>
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> الالتزام بتعليمات المنظمين </p>
+                        <p> Respect des consignes des organisateurs </p>
+                    </div>
+                </div>
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> الالتزام بتعليمات المنظمين </p>
+                        <p> Respect des consignes des organisateurs </p>
+                    </div>
+                </div>
+
+                <div class="instruction-card ">
+                    <img src="../assets/images/instructions/inst-001.png" class="img-fluid" alt="">
+                    <div class="instruction-text">
+                        <p class="mb-0"> الالتزام بتعليمات المنظمين </p>
+                        <p> Respect des consignes des organisateurs </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="footer-text-wrapper mb-3">
+                <p class="ar"> تطبق الشروط و الأحكام </p>
+                <p class="en"> Appliquer les termes et conditions </p>
             </div>
 
 
+            <div class="footer-icons-wrapper">
+
+                <p> <img src="icon-01.png" style="width: 25px;" alt=""> <span> salamfairs.com.sa</span> </p>
+
+                <p> <img src="icon-02.png" style="width: 25px;" alt=""> <span> @SalamForFairs </span> </p>
+
+                <p> <img src="icon-03.png" style="width: 25px;" alt=""> <span> Salam_ForFairs </span> </p>
+
+            </div>
 
 
-
-        </div>
+        </div> <!-- template-content -->
 
     </div>
 
