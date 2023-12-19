@@ -1,4 +1,5 @@
-<html dir="<?php if (isset($_GET['dir']))   echo $_GET['dir']; ?>">
+<!-- <html dir="<?php if (isset($_GET['dir']))   echo $_GET['dir']; ?>"> -->
+<html dir="rtl">
 
 <head>
     <!-- Required meta tags -->

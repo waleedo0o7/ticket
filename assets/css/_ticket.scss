@@ -1,0 +1,161 @@
+.one-ticket-wrapper {
+    font-family: "Cairo", sans-serif;
+    font-size: 14px;
+    position: relative;
+
+    .template-wrapper {
+        margin: auto;
+        border-bottom: 1px solid #888;
+        padding: 30px 0;
+    }
+
+    p {
+        margin: 0px !important;
+    }
+
+    .template-content {
+        width: 100%;
+        margin: auto;
+        z-index: 9;
+        height: 100%;
+        position: relative;
+        max-width: 800px;
+    }
+
+    .scan-and-form-wrapper {
+        display: flex;
+        gap: 10px;
+        .scan-wrapper {
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #333;
+            height: fit-content;
+
+            .scan-image-wrapper {
+                background: linear-gradient(45deg, rgba(15, 176, 94, 1) 10%, rgba(1, 143, 179, 1) 90%);
+                padding: 10px;
+                border-radius: 10px;
+                img {
+                    border-radius: 8px;
+                }
+            }
+            .scan-text-wrapper {
+                color: #fff;
+                padding: 5px 10px;
+                text-align: center;
+            }
+        }
+
+        .form-and-title-wrapper {
+            width: 70%;
+
+            .section-title-wrapper {
+                background: rgba(15, 176, 94, 1);
+                border-radius: 10px;
+                color: #fff;
+                padding: 10px;
+            }
+
+            .form-wrapper {
+                .form-group {
+                    width: 100%;
+                    margin-bottom: 25px;
+                    .title-wrapper {
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    p.input-value {
+                        background: #e7e7e7;
+                        padding: 6px;
+                        border-radius: 8px;
+                        font-size: 18px;
+                        margin: 0;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                }
+                .tow-forms-wrapper {
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .text-with-star-icon-wrapper {
+        background: #e1e2e1;
+        border-radius: 10px;
+        margin-right: 20px;
+        min-height: 60px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-right: 40px;
+        position: relative;
+
+        p {
+            font-size: 20px;
+            margin: 0;
+        }
+        p.ar {
+            direction: rtl;
+            margin-bottom: 5px;
+        }
+        .star-image {
+            height: 65px;
+            position: absolute;
+            top: 0;
+            right: -25px;
+        }
+    }
+
+    .main-section-title-wrapper {
+        direction: rtl;
+        text-align: center;
+
+        p {
+            font-size: 32px;
+            font-weight: bold;
+        }
+    }
+
+    .instruction-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5%;
+
+        .instruction-card {
+            text-align: center;
+            width: 19%;
+            margin-bottom: 10px;
+            .instruction-text {
+                color: #fff;
+                background: #3c3c3c;
+                padding: 3px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .footer-icons-wrapper {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .bottom-shape-bg-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.clearfix {
+    clear: both;
+}

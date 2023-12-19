@@ -1323,71 +1323,6 @@ footer.footer-wrapper .footer-body-wrapper {
   border-bottom-color: #fff !important;
 }
 
-.one-ticket-wrapper {
-  font-family: "rubik", sans-serif;
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  line-height: 2.15;
-}
-.one-ticket-wrapper .template-wrapper {
-  position: relative;
-}
-.one-ticket-wrapper .template-wrapper .bg-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background: #fff;
-}
-.one-ticket-wrapper .form-wrapper {
-  position: absolute;
-  top: 24.8%;
-  right: 14%;
-  width: 47%;
-}
-.one-ticket-wrapper .w-50 {
-  width: 48% !important;
-}
-.one-ticket-wrapper .d-inline {
-  display: inline-block !important;
-}
-.one-ticket-wrapper .form-group {
-  width: 100%;
-  margin-bottom: 25px;
-}
-.one-ticket-wrapper .form-group .title-wrapper {
-  margin-bottom: 0px;
-}
-.one-ticket-wrapper .form-group .title-wrapper p {
-  color: #656565;
-  display: inline-block;
-  font-size: inherit;
-  margin: 0;
-}
-.one-ticket-wrapper .form-group input {
-  width: 100%;
-  border: none;
-  text-align: center;
-  font-size: inherit;
-  background: transparent;
-  border: none !important;
-  outline: none !important;
-  font-weight: bold;
-}
-.one-ticket-wrapper .tow-forms-wrapper .right {
-  margin-left: 2.5%;
-}
-.one-ticket-wrapper .en-wrapper {
-  width: 49%;
-  display: inline-block;
-}
-.one-ticket-wrapper .ar-wrapper {
-  width: 49%;
-  display: inline-block;
-  text-align: right;
-}
-
 @media all and (max-width: 800px) {
   .body-wrapper.homepage nav.top-nav-wrapper,
   .body-wrapper nav.top-nav-wrapper {
@@ -1535,6 +1470,150 @@ footer.footer-wrapper .footer-body-wrapper {
     margin-bottom: 5px;
   }
 }
+.one-ticket-wrapper {
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  position: relative;
+}
+.one-ticket-wrapper .template-wrapper {
+  margin: auto;
+  border-bottom: 1px solid #888;
+  padding: 30px 0;
+}
+.one-ticket-wrapper p {
+  margin: 0px !important;
+}
+.one-ticket-wrapper .template-content {
+  width: 100%;
+  margin: auto;
+  z-index: 9;
+  height: 100%;
+  position: relative;
+  max-width: 800px;
+}
+.one-ticket-wrapper .scan-and-form-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .scan-wrapper {
+  width: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #333;
+  height: fit-content;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .scan-wrapper .scan-image-wrapper {
+  background: linear-gradient(45deg, rgb(15, 176, 94) 10%, rgb(1, 143, 179) 90%);
+  padding: 10px;
+  border-radius: 10px;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .scan-wrapper .scan-image-wrapper img {
+  border-radius: 8px;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .scan-wrapper .scan-text-wrapper {
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .form-and-title-wrapper {
+  width: 70%;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .form-and-title-wrapper .section-title-wrapper {
+  background: rgb(15, 176, 94);
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .form-and-title-wrapper .form-wrapper .form-group {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .form-and-title-wrapper .form-wrapper .form-group .title-wrapper {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .form-and-title-wrapper .form-wrapper .form-group p.input-value {
+  background: #e7e7e7;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+.one-ticket-wrapper .scan-and-form-wrapper .form-and-title-wrapper .form-wrapper .tow-forms-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.one-ticket-wrapper .text-with-star-icon-wrapper {
+  background: #e1e2e1;
+  border-radius: 10px;
+  margin-right: 20px;
+  min-height: 60px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  position: relative;
+}
+.one-ticket-wrapper .text-with-star-icon-wrapper p {
+  font-size: 20px;
+  margin: 0;
+}
+.one-ticket-wrapper .text-with-star-icon-wrapper p.ar {
+  direction: rtl;
+  margin-bottom: 5px;
+}
+.one-ticket-wrapper .text-with-star-icon-wrapper .star-image {
+  height: 65px;
+  position: absolute;
+  top: 0;
+  right: -25px;
+}
+.one-ticket-wrapper .main-section-title-wrapper {
+  direction: rtl;
+  text-align: center;
+}
+.one-ticket-wrapper .main-section-title-wrapper p {
+  font-size: 32px;
+  font-weight: bold;
+}
+.one-ticket-wrapper .instruction-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5%;
+}
+.one-ticket-wrapper .instruction-cards .instruction-card {
+  text-align: center;
+  width: 19%;
+  margin-bottom: 10px;
+}
+.one-ticket-wrapper .instruction-cards .instruction-card .instruction-text {
+  color: #fff;
+  background: #3c3c3c;
+  padding: 3px;
+  border-radius: 10px;
+}
+.one-ticket-wrapper .footer-icons-wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.one-ticket-wrapper .bottom-shape-bg-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
 html[dir=rtl] body {
   font-family: "Cairo", sans-serif;
   text-align: right;
