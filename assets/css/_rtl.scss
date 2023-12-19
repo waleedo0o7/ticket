@@ -1,0 +1,91 @@
+////////////////////// RTL START //////////////////////
+
+html[dir="rtl"] {
+    body {
+        font-family: "Cairo", sans-serif;
+        text-align: right;
+    }
+
+    .custom-checkbox {
+        .custom-control-label::before {
+            left: unset;
+            right: 0;
+        }
+        .custom-control-input:checked ~ .custom-control-label {
+            &::before,
+            &::after {
+                left: unset !important;
+                right: 0 !important;
+            }
+        }
+    }
+
+    ul.custom-ul {
+        li {
+            &::before {
+                right: 0px;
+            }
+        }
+    }
+
+    .custom-accordion .card-header button {
+        text-align: right;
+    }
+
+    .custom-accordion .btn-link:after {
+        right: unset;
+        left: 20px;
+    }
+
+    .custom-accordion.gray-arrow .card {
+        margin-right: 0px !important;
+        margin-left: 15px;
+    }
+
+    .dropdown-menu {
+        text-align: right;
+    }
+
+    .modal {
+        .modal-header .close {
+            margin: -1rem auto -1rem -1rem;
+        }
+    }
+
+    .activate-inputs,
+    #count-down-numbers {
+        direction: ltr !important;
+    }
+
+    .input-with-submit-button {
+        a.btn {
+            right: unset;
+            left: 0;
+        }
+    }
+
+    .form-group .country-code-container {
+        direction: ltr !important;
+    }
+
+    .dataTables_wrapper .dataTables_info {
+        float: right;
+    }
+
+    .dataTables_wrapper .dataTables_paginate {
+        float: left;
+        text-align: left;
+    }
+
+    table.dataTable thead th,
+    table.dataTable thead td {
+        text-align: right;
+    }
+
+    .one-ticket-wrapper,
+    .one-ticket-wrapper * {
+        direction: ltr !important;
+    }
+}
+
+////////////////////// RTL END //////////////////////
