@@ -408,7 +408,8 @@ footer.footer-wrapper {
   color: #fff;
   line-height: 1.8;
   background-image: url(../images/pattern-white.png);
-  background-size: 50%;
+  background-position: 100% 0;
+  background-size: 40%;
   background-repeat: no-repeat;
 }
 footer.footer-wrapper * {
@@ -478,8 +479,6 @@ footer.footer-wrapper .footer-body-wrapper {
   color: #fff !important;
 }
 .body-wrapper.homepage .main-page-wrapper {
-  background-image: url(../images/pattern-green.png);
-  background-size: 50%;
   background-position: center center;
   background-repeat: repeat;
 }
@@ -487,9 +486,10 @@ footer.footer-wrapper .footer-body-wrapper {
 .main-page-wrapper {
   background-image: url(../images/pattern-green.png);
   background-size: 50%;
-  background-position: -100px 0px;
+  background-position: calc(100% + 100px) 0px;
   background-repeat: no-repeat;
   padding: 60px 0;
+  min-height: 100vh;
 }
 .main-page-wrapper.no-bg {
   background: none !important;
@@ -1539,6 +1539,9 @@ html[dir=rtl] body {
   font-family: "Cairo", sans-serif;
   text-align: right;
 }
+html[dir=rtl] .main-page-wrapper {
+  background-position: calc(0% - 100px) 0px;
+}
 html[dir=rtl] .custom-checkbox .custom-control-label::before {
   left: unset;
   right: 0;
@@ -1592,6 +1595,9 @@ html[dir=rtl] table.dataTable thead td {
 html[dir=rtl] .one-ticket-wrapper,
 html[dir=rtl] .one-ticket-wrapper * {
   direction: ltr !important;
+}
+html[dir=rtl] footer.footer-wrapper {
+  background-position: 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,10 @@ html[dir="rtl"] {
         text-align: right;
     }
 
+    .main-page-wrapper {
+        background-position: calc(0% - 100px) 0px;
+    }
+
     .custom-checkbox {
         .custom-control-label::before {
             left: unset;
@@ -86,6 +90,10 @@ html[dir="rtl"] {
     .one-ticket-wrapper * {
         direction: ltr !important;
     }
+
+    footer.footer-wrapper {
+    
+        background-position: 0 0 ;}
 }
 
 ////////////////////// RTL END //////////////////////
