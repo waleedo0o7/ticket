@@ -384,7 +384,7 @@ nav.top-nav-wrapper .top-nav .authorized-user-icon-wrapper .dropdown > a.menu-li
 }
 nav.top-nav-wrapper .top-nav .authorized-user-icon-wrapper .dropdown a.menu-link {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 14px;
   color: #000;
