@@ -513,6 +513,9 @@ footer.footer-wrapper .footer-body-wrapper {
   opacity: 0.6;
   font-size: 14px;
 }
+.input-with-icon-wrapper textarea {
+  padding-inline-start: 40px;
+}
 .input-with-icon-wrapper .icon-image {
   position: absolute;
   top: 0;

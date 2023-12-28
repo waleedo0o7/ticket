@@ -6,7 +6,6 @@
 
         <div class="page-content-75">
 
-
             <div class="title-wrapper mb-4">
                 <h2 class="title bold"> تسجيل الدخول </h2>
             </div>
@@ -16,7 +15,6 @@
                 <form>
 
                     <div class="row">
-
 
                         <div class="col-md-6">
                             <div class="form-group">
@@ -28,11 +26,6 @@
                             </div><!-- form-group -->
                         </div> <!-- col-md-6 -->
 
-
-
-
-
-
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="date"> كلمة المرور </label>
@@ -42,7 +35,6 @@
                                 </div>
                             </div><!-- form-group -->
                         </div> <!-- col-md-6 -->
-
 
                         <div class="col-md-6">
                             <div class="form-group custom-control custom-checkbox mb-3">
