@@ -100,7 +100,7 @@ footer.footer-wrapper {
     color: #fff;
     line-height: 1.8;
     background-image: url(../images/pattern-white.png);
-    background-position: 100% 0 ;
+    background-position: 100% 0;
     background-size: 40%;
     background-repeat: no-repeat;
 
@@ -116,11 +116,29 @@ footer.footer-wrapper {
     ul {
         li {
             line-height: 2.5;
+            font-size: 14px;
         }
     }
 
     .footer-body-wrapper {
         padding: 50px 0;
+    }
+
+    .widget-title {
+        font-size: 18px;
+        padding-inline-start: 20px;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 11px;
+            right: 0;
+            background: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 500px;
+        }
     }
 }
 ////////////////////// FOOTER END //////////////////////
