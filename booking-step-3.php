@@ -38,8 +38,46 @@
                     <div class="d-block mb-4">
 
                         <label class="label mb-2 "> أنواع الدفع </label>
+ 
+                        <div class="attributes-options default">
 
-                        <img src="assets/images/wallet-cards.png" class="img-fluid w-100" alt="">
+                            <label class="option-container option-inline">
+                                <input type="radio" name="pay" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay/pay-1.png" class="img-fluid" alt=""> </span>
+                            </label>
+
+                            <label class="option-container option-inline">
+                                <input type="radio" name="pay" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay/pay-2.png" class="img-fluid" alt=""> </span>
+                            </label>
+
+                            <label class="option-container option-inline">
+                                <input type="radio" name="pay" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay/pay-3.png" class="img-fluid" alt=""> </span>
+                            </label>
+
+                            <label class="option-container option-inline">
+                                <input type="radio" name="pay" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay/pay-4.png" class="img-fluid" alt=""> </span>
+                            </label>
+
+                            <label class="option-container option-inline">
+                                <input type="radio" name="pay" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay/pay-5.png" class="img-fluid" alt=""> </span>
+                            </label>
+
+                            <label class="option-container option-inline">
+                                <input type="radio" name="pay" value="1">
+                                <span class="checkmark"> <img src="assets/images/pay/pay-6.png" class="img-fluid" alt=""> </span>
+                            </label>
+
+
+
+
+
+                        </div> <!-- share-options-wrapper -->
+
+
                     </div>
 
                     <div class="form-group mb-4">

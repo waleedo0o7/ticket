@@ -4,7 +4,7 @@
   --primaryColor10: #25b15d10;
   --primaryColorDark: #106c35;
   --gray: #b4b4b4;
-  --grayLight: #dedede;
+  --grayLight: #ededed;
   --grayExtraLight: #f7f7f7b1;
 }
 
@@ -872,7 +872,7 @@ footer.footer-wrapper .footer-body-wrapper {
   align-items: center;
   position: absolute;
   margin-right: 0px;
-  border: 2px solid var(--gray);
+  border: 2px solid var(--grayLight);
   background: #fff;
 }
 .option-container .checkmark:after {
