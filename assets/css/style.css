@@ -423,23 +423,25 @@ footer.footer-wrapper ul li {
   line-height: 2.5;
   font-size: 14px;
 }
+footer.footer-wrapper ul li a {
+  padding-inline-start: 20px;
+  position: relative;
+}
+footer.footer-wrapper ul li a:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  background: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 500px;
+}
 footer.footer-wrapper .footer-body-wrapper {
   padding: 50px 0;
 }
 footer.footer-wrapper .widget-title {
   font-size: 18px;
-  padding-inline-start: 20px;
-  position: relative;
-}
-footer.footer-wrapper .widget-title:after {
-  content: "";
-  position: absolute;
-  top: 11px;
-  right: 0;
-  background: #fff;
-  width: 10px;
-  height: 10px;
-  border-radius: 500px;
 }
 
 .title-wrapper .title {
@@ -1696,6 +1698,10 @@ html[dir=rtl] .one-ticket-wrapper * {
 }
 html[dir=rtl] footer.footer-wrapper {
   background-position: 0 0;
+}
+html[dir=rtl] footer.footer-wrapper ul li a:after {
+  right: 0;
+  left: unset;
 }
 
 /*# sourceMappingURL=style.css.map */

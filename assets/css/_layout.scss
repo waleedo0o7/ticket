@@ -117,6 +117,20 @@ footer.footer-wrapper {
         li {
             line-height: 2.5;
             font-size: 14px;
+            a{
+                padding-inline-start: 20px;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 11px;
+                    left: 0;
+                    background: #fff;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 500px;
+                }
+            }
         }
     }
 
@@ -126,19 +140,6 @@ footer.footer-wrapper {
 
     .widget-title {
         font-size: 18px;
-        padding-inline-start: 20px;
-        position: relative;
-
-        &:after {
-            content: "";
-            position: absolute;
-            top: 11px;
-            right: 0;
-            background: #fff;
-            width: 10px;
-            height: 10px;
-            border-radius: 500px;
-        }
     }
 }
 ////////////////////// FOOTER END //////////////////////

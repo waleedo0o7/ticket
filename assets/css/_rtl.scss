@@ -92,8 +92,14 @@ html[dir="rtl"] {
     }
 
     footer.footer-wrapper {
-    
-        background-position: 0 0 ;}
+        background-position: 0 0;
+    }
+
+    footer.footer-wrapper ul li a:after {
+        right: 0 ;
+        left: unset;
+
+    }
 }
 
 ////////////////////// RTL END //////////////////////
