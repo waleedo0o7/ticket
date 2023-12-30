@@ -992,7 +992,8 @@ footer.footer-wrapper .widget-title {
   margin: 0;
   margin-inline-end: 10px;
 }
-.checkout-total-wrapper .old-price {
+
+.old-price {
   font-size: 16px;
   color: #f00;
   text-decoration: line-through;

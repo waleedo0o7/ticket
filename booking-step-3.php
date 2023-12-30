@@ -38,37 +38,23 @@
                     <div class="d-block mb-4">
 
                         <label class="label mb-2 "> أنواع الدفع </label>
- 
+
                         <div class="attributes-options default">
 
                             <label class="option-container option-inline">
                                 <input type="radio" name="pay" value="1">
-                                <span class="checkmark"> <img src="assets/images/pay/pay-1.png" class="img-fluid" alt=""> </span>
+                                <span class="checkmark"> <img src="assets/images/pay/pay-1.png" class="img-fluid" alt="" style="height : 35px"> </span>
                             </label>
 
                             <label class="option-container option-inline">
                                 <input type="radio" name="pay" value="1">
-                                <span class="checkmark"> <img src="assets/images/pay/pay-2.png" class="img-fluid" alt=""> </span>
+                                <span class="checkmark"> <img src="assets/images/pay/pay-2.png" class="img-fluid" alt="" style="height : 35px"> </span>
                             </label>
+
 
                             <label class="option-container option-inline">
                                 <input type="radio" name="pay" value="1">
-                                <span class="checkmark"> <img src="assets/images/pay/pay-3.png" class="img-fluid" alt=""> </span>
-                            </label>
-
-                            <label class="option-container option-inline">
-                                <input type="radio" name="pay" value="1">
-                                <span class="checkmark"> <img src="assets/images/pay/pay-4.png" class="img-fluid" alt=""> </span>
-                            </label>
-
-                            <label class="option-container option-inline">
-                                <input type="radio" name="pay" value="1">
-                                <span class="checkmark"> <img src="assets/images/pay/pay-5.png" class="img-fluid" alt=""> </span>
-                            </label>
-
-                            <label class="option-container option-inline">
-                                <input type="radio" name="pay" value="1">
-                                <span class="checkmark"> <img src="assets/images/pay/pay-6.png" class="img-fluid" alt=""> </span>
+                                <span class="checkmark"> <img src="assets/images/pay/pay-3-banks.png" class="img-fluid" alt="" style="height : 30px"> </span>
                             </label>
 
 

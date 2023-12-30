@@ -630,15 +630,18 @@
         }
     }
 
-    .old-price {
-        font-size: 16px;
-        color: #f00;
-        text-decoration: line-through;
-        margin-bottom: 0;
-        line-height: 1.1;
-        margin-inline-start: 8px;
-    }
 }
+
+
+.old-price {
+    font-size: 16px;
+    color: #f00;
+    text-decoration: line-through;
+    margin-bottom: 0;
+    line-height: 1.1;
+    margin-inline-start: 8px;
+}
+
 
 .select2-selection {
     -webkit-box-shadow: 0;
