@@ -693,6 +693,7 @@ footer.footer-wrapper .widget-title {
   background: #f6f6f6;
   border-radius: 5px;
   overflow: hidden;
+  direction: ltr !important;
 }
 .change-quantity-wrapper .counter input {
   width: 60px;

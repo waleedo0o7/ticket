@@ -296,6 +296,7 @@
         background: #f6f6f6;
         border-radius: 5px;
         overflow: hidden;
+        direction: ltr !important;
 
         input {
             width: 60px;
