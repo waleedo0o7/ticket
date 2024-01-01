@@ -2948,4 +2948,10 @@
         hijriText: "هجري",
         gregorianText: "ميلادي"
     };
+
+    if ($("html").attr("dir") === 'ltr') { // IF LANGUAGE IS EN
+        $.fn.hijriDatePicker.defaults.icons.today = 'Today'
+        $.fn.hijriDatePicker.defaults.hijriText = 'Hijri'
+    }
+
 }));

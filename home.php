@@ -161,10 +161,12 @@
                                 <p> 14:00 <span> م </span> </p>
                             </div>
 
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div> <!-- language -->
+
+                            <div class="language text-icon-wrapper image mb-2">
+                                <span class="flag-icon flag-icon-us "></span>
+                                <p>English</p>
+                            </div>
+
 
                             <div class="tickets-count text-icon-wrapper mb-4">
                                 <i class="icon icon-ticket"></i>
@@ -194,10 +196,10 @@
                                 <p> 14:00 <span> م </span> </p>
                             </div>
 
-                            <div class="language text-icon-wrapper image mb-4">
-                                <img src="assets/images/flag-ksa.png" class="img-fuid flag-sm" alt="">
-                                <p> جولة باللغة العربية </p>
-                            </div> <!-- language -->
+                            <div class="language text-icon-wrapper image mb-2">
+                                <span class="flag-icon flag-icon-sa"></span>
+                                <p>Arabic</p>
+                            </div>
 
                             <div class="tickets-count text-icon-wrapper mb-4">
                                 <i class="icon icon-ticket"></i>
@@ -216,9 +218,6 @@
 
                         </div><!-- time-card -->
                     </div> <!-- col-md-3 -->
-
-
-
 
 
 

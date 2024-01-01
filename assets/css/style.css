@@ -303,7 +303,7 @@ button:focus {
 
 .fi,
 .flag-icon {
-  margin-inline-end: 5px;
+  margin-inline-end: 5px !important;
 }
 
 .modal .modal-content {
